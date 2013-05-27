@@ -1,19 +1,27 @@
+from __future__ import unicode_literals
+
 AUTHOR = 'matt lebrun'
-SITENAME = 'cr8ivecodesmith'
+SITENAME = 'programmers are people too'
 SITEURL = 'http://mattlebrun.com'
 DEFAULT_DATE_FORMAT = '%A, %B %d, %Y'
+SUMMARY_MAX_LENGTH = (50)
 
 GITHUB_URL = 'https://github.com/cr8ivecodesmith/cr8ivecodesmith.github.com'
-DISQUS_SITENAME = 'cr8ivecodesmith'
-GOOGLE_ANALYTICS='UA-9679489-4'
+# DISQUS_SITENAME = 'cr8ivecodesmith'
+# GOOGLE_ANALYTICS='UA-9679489-4'
 
 FEED_DOMAIN = SITEURL
-SOCIAL = (('twitter', 'https://twitter.com/cr8ivecodesmith'),
-          ('github', 'https://github.com/cr8ivecodesmith'),
-          ('google+', 'https://plus.google.com/113492352729403053751'),)
-TAG_FEED_ATOM = 'feeds/%s.atom.xml'
-TWITTER_USERNAME = 'cr8ivecodesmith'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+
+# SOCIAL = (('twitter', 'https://twitter.com/cr8ivecodesmith'),
+#           ('github', 'https://github.com/cr8ivecodesmith'),
+#           ('google+', 'https://plus.google.com/113492352729403053751'),)
+# TWITTER_USERNAME = 'cr8ivecodesmith'
 
 THEME = 'mnmlist'
-TIMEZONE = "Asia/Manila"
+TIMEZONE = 'Asia/Manila'
 DEFAULT_PAGINATION = 1
+
+MARKUP = (('md', 'rst'))
+MD_EXTENSIONS = (['codehilite','extra'])
