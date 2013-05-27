@@ -1,7 +1,11 @@
 Matt Lebrun
 ===========
 
-Misadventures of a Hypercaffeinated Creative Codesmith
+Programmers Are People Too
 
-Currently this site is accessible at: [http://cr8ivecodesmith.github.io](http://cr8ivecodesmith.github.io)
+---
+
+A static site generated with Pelican and hosted on Github  
+
+Check it out on [mattlebrun.com](http://mattlebrun.com)  
 
