@@ -1,5 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>programmers are people too</title><link href="http://mattlebrun.com/" rel="alternate"></link><link href="http://mattlebrun.com/feeds/all.atom.xml" rel="self"></link><id>http://mattlebrun.com/</id><updated>2013-05-25T18:00:00+08:00</updated><entry><title>the way of the pelican and the order of silly walks</title><link href="http://mattlebrun.com/the-way-of-the-pelican.html" rel="alternate"></link><updated>2013-05-25T18:00:00+08:00</updated><author><name>matt lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>programmers are people too</title><link href="http://mattlebrun.com/" rel="alternate"></link><link href="http://mattlebrun.com/feeds/all.atom.xml" rel="self"></link><id>http://mattlebrun.com/</id><updated>2013-06-11T23:00:00+08:00</updated><entry><title>the setup</title><link href="http://mattlebrun.com/the-setup.html" rel="alternate"></link><updated>2013-06-11T23:00:00+08:00</updated><author><name>matt lebrun</name></author><id>tag:mattlebrun.com,2013-06-11:the-setup.html</id><summary type="html">&lt;p&gt;I was browsing the social networks today and chanced upon 
+&lt;a href="http://usesthis.com/"&gt;The Setup&lt;/a&gt; which is a website that features 
+interviews of people &lt;em&gt;(mostly geeks)&lt;/em&gt; where they get to talk about what 
+they do and then elaborate more on what tools (hardware and software) they 
+use to get shit done. I thought, "Hey that's pretty cool.", so I read on.&lt;/p&gt;
+&lt;p&gt;As I browsed through one interview to the next I noticed that most 
+(perhaps in the 90th percentile) are using Apple computers. Which got me to 
+ponder whether this is just another Apple fan site. Thank goodness the 
+author cleared this out in the &lt;a href="http://usesthis.com/about/"&gt;about&lt;/a&gt; page. I 
+was short of dismissing the site as one and hitting the close button. &lt;/p&gt;
+&lt;p&gt;The interview with &lt;a href="http://eric.s.raymond.usesthis.com/"&gt;ESR&lt;/a&gt; was one that 
+got me thinking and write this post. Albeit, it was the trigger after a 
+spur of collective thoughts that was running in my head as I read on the 
+interviews of hackers and programmers that I admire. &lt;/p&gt;
+&lt;p&gt;So in the spirit of the &lt;a href="http://usesthis.com/"&gt;The Setup's&lt;/a&gt; ethos, here's 
+how my setup...&lt;/p&gt;
+&lt;h2&gt;who are you, and what do you do?&lt;/h2&gt;
+&lt;p&gt;I'm Matt Lebrun, and I fancy myself as a hybrid programmer/designer. It's a 
+work in progress and I strive to reach that ideal everyday. I speak several 
+&lt;em&gt;(programming)&lt;/em&gt; languages but I love &lt;a href="http://www.python.org/"&gt;Python&lt;/a&gt; above 
+all. In fact, I'm so crazy about it that I just had to spend a significant 
+amount of free time volunteering to our local &lt;a href="http://python.ph"&gt;Python community&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I think I should put this in a separate about page. But since I'm lazy at 
+moment, this will do. &lt;/p&gt;
+&lt;h2&gt;what hardware do you use?&lt;/h2&gt;
+&lt;p&gt;Have you heard of a programmer who does not own a computer? Yep I'm one of 
+them. At least I used to be until a couple of months ago. For a long time, 
+I contented myself with company issued computers until a life event forced 
+me to buy one. &lt;/p&gt;
+&lt;p&gt;I got myself a decent &lt;a href="http://www.villman.com/Product-Detail/Acer_V5-431-10072G50Ma"&gt;Acer V5 431&lt;/a&gt;. 
+It sports an IvyBridge Celeron 1007U dual-core ULV processor with internal 
+Intel HD 4000 graphics. I also bumped up the pre-installed RAM to 8GB to 
+make sure my VMs and numerous browser tabs are well fed. It also sports an 
+Ultrabook-ish look that's nice to look at. It also had other nice features 
+that I don't want to elaborate more on. Most importantly, it came with a 
+price that didn't break the bank. &lt;/p&gt;
+&lt;p&gt;I was happily working on it for a couple of months until the awesome folks 
+at &lt;a href="http://www.save22.com"&gt;Save22&lt;/a&gt; got me a laptop of my choosing. I got 
+myself a very sexy &lt;a href="http://h10025.www1.hp.com/ewfrf/wc/document?cc=us&amp;amp;lc=en&amp;amp;dlc=en&amp;amp;docname=c03508920#N351"&gt;HP Envy 4&lt;/a&gt;. 
+I use this as my primary machine now and have lent my Acer machine to my 
+sister indefinitely. &lt;/p&gt;
+&lt;p&gt;On the mobile end, I use the 1st generation &lt;a href="http://www.gsmarena.com/samsung_p1000_galaxy_tab-3370.php"&gt;Galaxy Tab&lt;/a&gt;, 
+both as a phone and tablet. I do all sorts of on-the-go stuff with it like 
+taking pictures and videos, gaming, journaling, sketching, reading, social 
+networking. I even code in Python on it!&lt;/p&gt;
+&lt;h2&gt;and what software?&lt;/h2&gt;
+&lt;p&gt;I consider Vim my wife and SublimeText2 my mistress. As I play around with 
+sublime, the more hooked I am. Is that bad?&lt;/p&gt;
+&lt;p&gt;I used NetBeans and Eclipse once when I was teaching myself to develop 
+Android apps. Then &lt;a href="http://phonegap.com/"&gt;PhoneGap&lt;/a&gt; is mature enough, and 
+there's even &lt;a href="http://kivy.org/"&gt;Kivy&lt;/a&gt;... &lt;/p&gt;
+&lt;p&gt;I primarily used Chrome/Chromium as my browser of choice, but the latest 
+incarnation of Firefox rekindled my love for it. So its my primary choice 
+now on both my PC and tablet. I just had to say that tab groups and firebug 
+should be default for any web development. &lt;/p&gt;
+&lt;p&gt;Gnome Terminator is my terminal of choice. Split, tab, and theme your 
+terminal to your hearts content. &lt;/p&gt;
+&lt;p&gt;I use VirtualBox heavily and run 1-3 virtual development servers at a time. &lt;/p&gt;
+&lt;p&gt;GIMP and Inkscape are my design tools of choice. &lt;/p&gt;
+&lt;p&gt;Shutter for selective screen capture. Very important for work and noting 
+things down. &lt;/p&gt;
+&lt;p&gt;LibreOffice and Google Docs for spreadsheets and presentations.&lt;/p&gt;
+&lt;p&gt;UbuntuOne and Insync keeps my important files in the safety of the cloud. &lt;/p&gt;
+&lt;p&gt;Thunderbird organizes my Gmail, Google calendar, and Google Tasks. &lt;/p&gt;
+&lt;p&gt;Skype and Empathy for chatting and office communication. &lt;/p&gt;
+&lt;p&gt;Google contacts keeps my contacts available on both mobile and PC. &lt;/p&gt;
+&lt;p&gt;KeepassX keeps my passwords, and I got it synced on both PC and mobile. &lt;/p&gt;
+&lt;p&gt;I &lt;a href="https://twitter.com/cr8ivecodesmith"&gt;tweet&lt;/a&gt; more nowadays. Its just a 
+more sensible social network, IMHO. My Facebook interaction is limited to 
+the &lt;a href="https://www.facebook.com/groups/pinoypug/"&gt;Python Users Group&lt;/a&gt; and 
+posting some family photo updates. &lt;/p&gt;
+&lt;p&gt;Linux, specifically Ubuntu as my OS of choice both as my daily driver and 
+on my VM dev servers. &lt;/p&gt;
+&lt;p&gt;My GalaxyTab is powered by CM10.1 and it works super fine. JB 4.2.2 and 
+kernel 3.x breathed new life to this old but trusty warrior. &lt;/p&gt;
+&lt;h2&gt;what would be your dream setup?&lt;/h2&gt;
+&lt;p&gt;Right now I'm very happy with my PC. Though I'm still waiting for the day 
+where ~1.2kgs, ~0.7mm thick, 500GB SSD, 16GB RAM, ~3GHZ Quad-core CPU, ~2GB 
+Dedicated Graphics, ~8hrs Battery, and Fully Linux compatible Ultrabooks 
+would emerge. &lt;/p&gt;
+&lt;p&gt;I could also use a bluetooth stereo headset with mic that I can use on both 
+my PC and tablet. &lt;/p&gt;
+&lt;p&gt;I'd also wish that Ubuntu could be a bit more up to date with the latest 
+kernel and do a rolling release just like Arch. &lt;/p&gt;
+&lt;p&gt;If I had the budget, I'd get something like a Galaxy Note 2 or Nexus 4. &lt;/p&gt;</summary><category term="thoughts"></category><category term="minimalism"></category><category term="geekery"></category></entry><entry><title>the way of the pelican and the order of silly walks</title><link href="http://mattlebrun.com/the-way-of-the-pelican.html" rel="alternate"></link><updated>2013-05-25T18:00:00+08:00</updated><author><name>matt lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
 internets. He talked about tales of discoveries and adventures, of code and
 sorcery, of... &lt;em&gt;well you get the point&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Let me tell you his story.&lt;/p&gt;

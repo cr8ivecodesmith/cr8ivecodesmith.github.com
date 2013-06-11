@@ -22,7 +22,6 @@ com = {
 
 # Start Build
 for i in settings['purge_list']:
-    call(com['delete'].format(i), shell=True) 
+    call(com['delete'].format(i), shell=True)
 
 call(com['build'], shell=True)
-
