@@ -8,7 +8,7 @@ SUMMARY_MAX_LENGTH = (50)
 
 GITHUB_URL = 'https://github.com/cr8ivecodesmith/cr8ivecodesmith.github.com'
 # DISQUS_SITENAME = 'cr8ivecodesmith'
-# GOOGLE_ANALYTICS='UA-9679489-4'
+GOOGLE_ANALYTICS = 'UA-9679489-4'
 
 FEED_DOMAIN = SITEURL
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
@@ -24,4 +24,4 @@ TIMEZONE = 'Asia/Manila'
 DEFAULT_PAGINATION = 1
 
 MARKUP = (('md', 'rst'))
-MD_EXTENSIONS = (['codehilite','extra'])
+MD_EXTENSIONS = (['codehilite', 'extra'])
