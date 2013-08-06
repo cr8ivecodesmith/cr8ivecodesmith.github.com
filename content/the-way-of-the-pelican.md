@@ -121,45 +121,55 @@ learn them some place else then come back to me."
 
 - Fire up your terminal and install VirtualEnv + Virtualenvwrapper  
 
-    $ sudo apt-get install -V python-setuptools python-dev
-    $ sudo easy_install --upgrade pip
-    $ sudo pip install virtualenv
-    $ sudo pip install virtualenvwrapper
-
+~~~~~
+$ sudo apt-get install -V python-setuptools python-dev
+$ sudo easy_install --upgrade pip
+$ sudo pip install virtualenv
+$ sudo pip install virtualenvwrapper
+~~~~~
 
 - Create a virtualenv directory and set your projects directory  
 
-    $ mkdir ~/.virtualenvs
-    $ mkdir ~/Projects
-
+~~~~~
+$ mkdir ~/.virtualenvs
+$ mkdir ~/Projects
+~~~~~
 
 - Update ~/.bashrc
 
 "From here on I shall be using Vim for text editing, but you're free to use 
 your favorite text editor.", the man reminded the boy.  
 
-    $ vim ~/.bashrc
+~~~~~
+$ vim ~/.bashrc
+~~~~~
 
 "Add the following text at the end of the file."  
 
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/Projects
-    source /usr/local/bin/virtualenvwrapper.sh
-
+~~~~~
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Projects
+source /usr/local/bin/virtualenvwrapper.sh
+~~~~~
 
 - Create a Virtual Environment  
 
-    $ mkvirtualenv pelican_blog
+~~~~~
+$ mkvirtualenv pelican_blog
+~~~~~
 
 "Then your prompt will turn into something like this..."  
 
-    (pelican_blog) $ 
-
+~~~~~
+(pelican_blog) $ 
+~~~~~
 
 - Go to your Github account and create a new repo for your blog and name 
   it:  
 
-    *your_username*.github.com  
+~~~~~
+*your_username*.github.com  
+~~~~~
 
 "Using your *username* is important here so that github will know that 
 you're trying to create a Github page.", the man warned.  
@@ -167,86 +177,101 @@ you're trying to create a Github page.", the man warned.
 
 - Clone it to your local directory  
 
-    (pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
-
+~~~~~
+(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
+~~~~~
 
 - Go to your working directory  
 
-    (pelican_blog) $ cd ~/Projects/my_blog
-    (pelican_blog)my_blog $ 
-
+~~~~~
+(pelican_blog) $ cd ~/Projects/my_blog
+(pelican_blog)my_blog $ 
+~~~~~
 
 - Install pelican + markdown  
 
-    (pelican_blog)my_blog $ pip install pelican
-    (pelican_blog)my_blog $ pip install Markdown
-
+~~~~~
+(pelican_blog)my_blog $ pip install pelican
+(pelican_blog)my_blog $ pip install Markdown
+~~~~~
 
 - Create a post in markdown  
 
-    (pelican_blog)my_blog $ mkdir .content
-    (pelican_blog)my_blog $ vim .content/my_first_blogpost.md
+~~~~~
+(pelican_blog)my_blog $ mkdir .content
+(pelican_blog)my_blog $ vim .content/my_first_blogpost.md
+~~~~~
 
 "You must have the following spell at the top of your file in order for 
 Pelican to recognize your post."
 
-    Title: hello world
-    Date: 2013-05-25 18:00
-    Category: code
-    Tags: pelican, python
-    Slug: the-way-of-the-pelican
-    Author: juan tamad
+~~~~~
+Title: hello world
+Date: 2013-05-25 18:00
+Category: code
+Tags: pelican, python
+Slug: the-way-of-the-pelican
+Author: juan tamad
 
-    "Somewhere below that you may begin writing your story."
+"Somewhere below that you may begin writing your story."
 
-    Hello world!
-
+Hello world!
+~~~~~
 
 - Create a settings.py
 
-    (pelican_blog)my_blog $ vim settings.py
+~~~~~
+(pelican_blog)my_blog $ vim settings.py
+~~~~~
+
+~~~~~
+from __future__ import unicode_literals
+
+AUTHOR = 'juan tamad'
+SITENAME = 'the misadventures of juan tamad'
+SITEURL = 'http://juantamad.ph'
+DEFAULT_DATE_FORMAT = '%A, %B %d, %Y'
+
+GITHUB_URL = 'https://github.com/*username*/*your_username*.github.com'
+
+TIMEZONE = 'Asia/Manila'
+DEFAULT_PAGINATION = 1
+~~~~~
 
 
-    from __future__ import unicode_literals
-
-    AUTHOR = 'juan tamad'
-    SITENAME = 'the misadventures of juan tamad'
-    SITEURL = 'http://juantamad.ph'
-    DEFAULT_DATE_FORMAT = '%A, %B %d, %Y'
-
-    GITHUB_URL = 'https://github.com/*username*/*your_username*.github.com'
-
-    TIMEZONE = 'Asia/Manila'
-    DEFAULT_PAGINATION = 1
-
-    "More settings can be found [here](http://docs.getpelican.com/en/3.1.1/settings.html)."
+"More settings can be found [here](http://docs.getpelican.com/en/3.1.1/settings.html)."
 
 
 - Generate the HTML files
 
-    SYNTAX:
-    pelican <input_dir> -o <output_dir> -s <settings_file.py>
+~~~~~
+SYNTAX:
+pelican <input_dir> -o <output_dir> -s <settings_file.py>
+~~~~~
 
-
-    (pelican_blog)my_blog $ pelican .content -o . -s settings.py
-
+~~~~~
+(pelican_blog)my_blog $ pelican .content -o . -s settings.py
+~~~~~
 
 - Check it out
 
-    (pelican_blog)my_blog $ firefox index.html
-
+~~~~~
+(pelican_blog)my_blog $ firefox index.html
+~~~~~
 
 - Push your changes to Github  
 
-    (pelican_blog)my_blog $ git add -A
-    (pelican_blog)my_blog $ git commit -m "The blog has begun!"
-    (pelican_blog)my_blog $ git push origin master
-
+~~~~~
+(pelican_blog)my_blog $ git add -A
+(pelican_blog)my_blog $ git commit -m "The blog has begun!"
+(pelican_blog)my_blog $ git push origin master
+~~~~~
 
 - Visit your new shiny site  
 
-    (pelican_blog)my_blog $ firefox http://*your_username*.github.com
-
+~~~~~
+(pelican_blog)my_blog $ firefox http://*your_username*.github.com
+~~~~~
 
 ## and finally
 
