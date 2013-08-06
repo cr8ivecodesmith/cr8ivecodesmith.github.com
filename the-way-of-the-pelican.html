@@ -132,104 +132,144 @@ git, python, a terminal, and your running Ubuntu. Otherwise, move on and
 learn them some place else then come back to me."  </p>
 <p>"With those things prepared let's begin your training."  </p>
 <ul>
-<li>
-<p>Fire up your terminal and install VirtualEnv + Virtualenvwrapper  </p>
-<p><code>$ sudo apt-get install -V python-setuptools python-dev</code><br />
-<code>$ sudo easy_install --upgrade pip</code><br />
-<code>$ sudo pip install virtualenv</code><br />
-<code>$ sudo pip install virtualenvwrapper</code>  </p>
-</li>
-<li>
-<p>Create a virtualenv directory and set your projects directory  </p>
-<p><code>$ mkdir ~/.virtualenvs</code><br />
-<code>$ mkdir ~/Projects</code>  </p>
-</li>
+<li>Fire up your terminal and install VirtualEnv + Virtualenvwrapper  </li>
+</ul>
+<p>.. code-block:: sh
+    $ sudo apt-get install -V python-setuptools python-dev
+    $ sudo easy_install --upgrade pip
+    $ sudo pip install virtualenv
+    $ sudo pip install virtualenvwrapper</p>
+<ul>
+<li>Create a virtualenv directory and set your projects directory  </li>
+</ul>
+<p>.. code-block:: sh
+    $ mkdir ~/.virtualenvs
+    $ mkdir ~/Projects</p>
+<ul>
 <li>
 <p>Update ~/.bashrc</p>
 <p>"From here on I shall be using Vim for text editing, but you're free to
 use your favorite text editor.", the man reminded the boy.  </p>
-<p><code>$ vim ~/.bashrc</code>  </p>
-<p>"Add the following text at the end of the file."  </p>
-<p><code>export WORKON_HOME=$HOME/.virtualenvs</code><br />
-<code>export PROJECT_HOME=$HOME/Projects</code><br />
-<code>source /usr/local/bin/virtualenvwrapper.sh</code>  </p>
 </li>
-<li>
-<p>Create a Virtual Environment  </p>
-<p><code>$ mkvirtualenv pelican_blog</code>  </p>
-<p>"Then your prompt will turn into something like this..."  </p>
-<p><code>(pelican_blog) $</code>  </p>
-</li>
+</ul>
+<p>.. code-block:: sh
+    $ vim ~/.bashrc</p>
+<div class="codehilite"><pre><span class="s">&quot;Add the following text at the end of the file.&quot;</span>
+</pre></div>
+
+
+<p>.. code-block:: sh
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/Projects
+    source /usr/local/bin/virtualenvwrapper.sh</p>
+<ul>
+<li>Create a Virtual Environment  </li>
+</ul>
+<p>.. code-block:: sh
+    $ mkvirtualenv pelican_blog</p>
+<div class="codehilite"><pre><span class="s">&quot;Then your prompt will turn into something like this...&quot;</span>
+</pre></div>
+
+
+<p>.. code-block:: sh
+    (pelican_blog) $ </p>
+<ul>
 <li>
 <p>Go to your Github account and create a new repo for your blog and name 
   it:  </p>
-<p><code>*your_username*.github.com</code>  </p>
+<p><em>your_username</em>.github.com</p>
 <p>"Using your <em>username</em> is important here so that github will know that 
 you're trying to create a Github page.", the man warned.  </p>
 </li>
 <li>
 <p>Clone it to your local directory  </p>
-<p><code>(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog</code>  </p>
-</li>
-<li>
-<p>Go to your working directory  </p>
-<p><code>(pelican_blog) $ cd ~/Projects/my_blog</code><br />
-<code>(pelican_blog)my_blog $</code>  </p>
-</li>
-<li>
-<p>Install pelican + markdown  </p>
-<p><code>(pelican_blog)my_blog $ pip install pelican</code><br />
-<code>(pelican_blog)my_blog $ pip install Markdown</code>  </p>
-</li>
-<li>
-<p>Create a post in markdown  </p>
-<p><code>(pelican_blog)my_blog $ mkdir .content</code><br />
-<code>(pelican_blog)my_blog $ vim .content/my_first_blogpost.md</code>  </p>
-<p>"You must have the following spell at the top of your file in order for 
-Pelican to recognize your post."</p>
-<p><code>Title: hello world</code><br />
-<code>Date: 2013-05-25 18:00</code><br />
-<code>Category: code</code><br />
-<code>Tags: pelican, python</code><br />
-<code>Slug: the-way-of-the-pelican</code><br />
-<code>Author: juan tamad</code>  </p>
-<p>"Somewhere below that you may begin writing your story."</p>
-<p><code>Hello world!</code>  </p>
-</li>
-<li>
-<p>Create a settings.py</p>
-<p><code>(pelican_blog)my_blog $ vim settings.py</code>  </p>
-<p><code>from __future__ import unicode_literals</code>  </p>
-<p><code>AUTHOR = 'juan tamad'</code><br />
-<code>SITENAME = 'the misadventures of juan tamad'</code><br />
-<code>SITEURL = 'http://juantamad.ph'</code><br />
-<code>DEFAULT_DATE_FORMAT = '%A, %B %d, %Y'</code>  </p>
-<p><code>GITHUB_URL = 'https://github.com/*username*/*your_username*.github.com'</code>  </p>
-<p><code>TIMEZONE = 'Asia/Manila'</code><br />
-<code>DEFAULT_PAGINATION = 1</code>  </p>
-<p>"More settings can be found <a href="http://docs.getpelican.com/en/3.1.1/settings.html">here</a>."</p>
-</li>
-<li>
-<p>Generate the HTML files</p>
-<p><code>SYNTAX:</code><br />
-<code>pelican &lt;input_dir&gt; -o &lt;output_dir&gt; -s &lt;settings_file.py&gt;</code>  </p>
-<p><code>(pelican_blog)my_blog $ pelican .content -o . -s settings.py</code>  </p>
-</li>
-<li>
-<p>Check it out</p>
-<p><code>(pelican_blog)my_blog $ firefox index.html</code>  </p>
-</li>
-<li>
-<p>Push your changes to Github  </p>
-<p><code>(pelican_blog)my_blog $ git add -A</code><br />
-<code>(pelican_blog)my_blog $ git commit -m "The blog has begun!"</code><br />
-<code>(pelican_blog)my_blog $ git push origin master</code>  </p>
-</li>
-<li>
-<p>Visit your new shiny site  </p>
-<p><code>(pelican_blog)my_blog $ firefox http://*your_username*.github.com</code>  </p>
 </li>
 </ul>
+<p>.. code-block:: sh
+    (pelican_blog) $ git clone git@github.com:<em>username</em>/<em>your_username</em>.github.com.git ~/Projects/my_blog</p>
+<ul>
+<li>Go to your working directory  </li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog) $ cd ~/Projects/my_blog
+    (pelican_blog)my_blog $ </p>
+<ul>
+<li>Install pelican + markdown  </li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog)my_blog $ pip install pelican
+    (pelican_blog)my_blog $ pip install Markdown</p>
+<ul>
+<li>Create a post in markdown  </li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog)my_blog $ mkdir .content
+    (pelican_blog)my_blog $ vim .content/my_first_blogpost.md</p>
+<div class="codehilite"><pre><span class="s">&quot;You must have the following spell at the top of your file in order for </span>
+<span class="n">Pelican</span> <span class="n">to</span> <span class="n">recognize</span> <span class="n">your</span> <span class="n">post</span><span class="p">.</span><span class="s">&quot;</span>
+</pre></div>
+
+
+<p>.. code-block:: sh
+    Title: hello world
+    Date: 2013-05-25 18:00
+    Category: code
+    Tags: pelican, python
+    Slug: the-way-of-the-pelican
+    Author: juan tamad</p>
+<div class="codehilite"><pre><span class="s">&quot;Somewhere below that you may begin writing your story.&quot;</span>
+
+<span class="n">Hello</span> <span class="n">world</span><span class="o">!</span>
+</pre></div>
+
+
+<ul>
+<li>Create a settings.py</li>
+</ul>
+<p>.. code-block:: python
+    (pelican_blog)my_blog $ vim settings.py</p>
+<div class="codehilite"><pre><span class="n">from</span> <span class="n">__future__</span> <span class="n">import</span> <span class="n">unicode_literals</span>
+
+<span class="n">AUTHOR</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">juan</span> <span class="n">tamad</span><span class="err">&#39;</span>
+<span class="n">SITENAME</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">the</span> <span class="n">misadventures</span> <span class="n">of</span> <span class="n">juan</span> <span class="n">tamad</span><span class="err">&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//juantamad.ph&#39;</span>
+<span class="n">DEFAULT_DATE_FORMAT</span> <span class="o">=</span> <span class="err">&#39;</span><span class="o">%</span><span class="n">A</span><span class="p">,</span> <span class="o">%</span><span class="n">B</span> <span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="o">%</span><span class="n">Y</span><span class="err">&#39;</span>
+
+<span class="n">GITHUB_URL</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">https</span><span class="o">:</span><span class="c1">//github.com/*username*/*your_username*.github.com&#39;</span>
+
+<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">Asia</span><span class="o">/</span><span class="n">Manila</span><span class="err">&#39;</span>
+<span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="s">&quot;More settings can be found [here](http://docs.getpelican.com/en/3.1.1/settings.html).&quot;</span>
+</pre></div>
+
+
+<ul>
+<li>
+<p>Generate the HTML files</p>
+<p>SYNTAX:
+pelican <input_dir> -o <output_dir> -s <settings_file.py></p>
+</li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog)my_blog $ pelican .content -o . -s settings.py</p>
+<ul>
+<li>Check it out</li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog)my_blog $ firefox index.html</p>
+<ul>
+<li>Push your changes to Github  </li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog)my_blog $ git add -A
+    (pelican_blog)my_blog $ git commit -m "The blog has begun!"
+    (pelican_blog)my_blog $ git push origin master</p>
+<ul>
+<li>Visit your new shiny site  </li>
+</ul>
+<p>.. code-block:: sh
+    (pelican_blog)my_blog $ firefox http://<em>your_username</em>.github.com</p>
 <h2>and finally</h2>
 <p>Several months later the boy has finished his training and with his new 
 found enlightenment, he went back home happier for once more the focus of 
