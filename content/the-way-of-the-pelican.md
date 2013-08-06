@@ -123,6 +123,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     $ sudo apt-get install -V python-setuptools python-dev
     $ sudo easy_install --upgrade pip
     $ sudo pip install virtualenv
@@ -133,6 +134,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     $ mkdir ~/.virtualenvs
     $ mkdir ~/Projects
 
@@ -144,6 +146,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     $ vim ~/.bashrc
 
 
@@ -151,6 +154,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Projects
     source /usr/local/bin/virtualenvwrapper.sh
@@ -160,12 +164,15 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     $ mkvirtualenv pelican_blog
 
 
     "Then your prompt will turn into something like this..."  
 
+
 .. code-block:: sh
+
     (pelican_blog) $ 
 
 
@@ -181,6 +188,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
 
 
@@ -188,6 +196,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog) $ cd ~/Projects/my_blog
     (pelican_blog)my_blog $ 
 
@@ -196,6 +205,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog)my_blog $ pip install pelican
     (pelican_blog)my_blog $ pip install Markdown
 
@@ -204,6 +214,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog)my_blog $ mkdir .content
     (pelican_blog)my_blog $ vim .content/my_first_blogpost.md
 
@@ -213,6 +224,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     Title: hello world
     Date: 2013-05-25 18:00
     Category: code
@@ -228,8 +240,12 @@ learn them some place else then come back to me."
 - Create a settings.py
 
 
-.. code-block:: python
+.. code-block:: sh
+
     (pelican_blog)my_blog $ vim settings.py
+
+
+.. code-block:: python
 
     from __future__ import unicode_literals
 
@@ -253,6 +269,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog)my_blog $ pelican .content -o . -s settings.py
 
 
@@ -267,6 +284,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog)my_blog $ git add -A
     (pelican_blog)my_blog $ git commit -m "The blog has begun!"
     (pelican_blog)my_blog $ git push origin master
@@ -276,6 +294,7 @@ learn them some place else then come back to me."
 
 
 .. code-block:: sh
+
     (pelican_blog)my_blog $ firefox http://*your_username*.github.com
 
 
