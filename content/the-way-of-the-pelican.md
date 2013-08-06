@@ -121,9 +121,6 @@ learn them some place else then come back to me."
 
 - Fire up your terminal and install VirtualEnv + Virtualenvwrapper  
 
-
-.. code-block:: sh
-
     $ sudo apt-get install -V python-setuptools python-dev
     $ sudo easy_install --upgrade pip
     $ sudo pip install virtualenv
@@ -132,28 +129,18 @@ learn them some place else then come back to me."
 
 - Create a virtualenv directory and set your projects directory  
 
-
-.. code-block:: sh
-
     $ mkdir ~/.virtualenvs
     $ mkdir ~/Projects
 
 
 - Update ~/.bashrc
 
-    "From here on I shall be using Vim for text editing, but you're free to
-    use your favorite text editor.", the man reminded the boy.  
-
-
-.. code-block:: sh
+"From here on I shall be using Vim for text editing, but you're free to use 
+your favorite text editor.", the man reminded the boy.  
 
     $ vim ~/.bashrc
 
-
-    "Add the following text at the end of the file."  
-
-
-.. code-block:: sh
+"Add the following text at the end of the file."  
 
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Projects
@@ -162,16 +149,9 @@ learn them some place else then come back to me."
 
 - Create a Virtual Environment  
 
-
-.. code-block:: sh
-
     $ mkvirtualenv pelican_blog
 
-
-    "Then your prompt will turn into something like this..."  
-
-
-.. code-block:: sh
+"Then your prompt will turn into something like this..."  
 
     (pelican_blog) $ 
 
@@ -179,23 +159,18 @@ learn them some place else then come back to me."
 - Go to your Github account and create a new repo for your blog and name 
   it:  
 
-    *your_username*.github.com
+    *your_username*.github.com  
 
-    "Using your *username* is important here so that github will know that 
-    you're trying to create a Github page.", the man warned.  
+"Using your *username* is important here so that github will know that 
+you're trying to create a Github page.", the man warned.  
+
 
 - Clone it to your local directory  
-
-
-.. code-block:: sh
 
     (pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
 
 
 - Go to your working directory  
-
-
-.. code-block:: sh
 
     (pelican_blog) $ cd ~/Projects/my_blog
     (pelican_blog)my_blog $ 
@@ -203,27 +178,17 @@ learn them some place else then come back to me."
 
 - Install pelican + markdown  
 
-
-.. code-block:: sh
-
     (pelican_blog)my_blog $ pip install pelican
     (pelican_blog)my_blog $ pip install Markdown
 
 
 - Create a post in markdown  
 
-
-.. code-block:: sh
-
     (pelican_blog)my_blog $ mkdir .content
     (pelican_blog)my_blog $ vim .content/my_first_blogpost.md
 
-
-    "You must have the following spell at the top of your file in order for 
-    Pelican to recognize your post."
-
-
-.. code-block:: sh
+"You must have the following spell at the top of your file in order for 
+Pelican to recognize your post."
 
     Title: hello world
     Date: 2013-05-25 18:00
@@ -239,13 +204,8 @@ learn them some place else then come back to me."
 
 - Create a settings.py
 
-
-.. code-block:: sh
-
     (pelican_blog)my_blog $ vim settings.py
 
-
-.. code-block:: python
 
     from __future__ import unicode_literals
 
@@ -268,22 +228,15 @@ learn them some place else then come back to me."
     pelican <input_dir> -o <output_dir> -s <settings_file.py>
 
 
-.. code-block:: sh
-
     (pelican_blog)my_blog $ pelican .content -o . -s settings.py
 
 
 - Check it out
 
-
-.. code-block:: sh
     (pelican_blog)my_blog $ firefox index.html
 
 
 - Push your changes to Github  
-
-
-.. code-block:: sh
 
     (pelican_blog)my_blog $ git add -A
     (pelican_blog)my_blog $ git commit -m "The blog has begun!"
@@ -291,9 +244,6 @@ learn them some place else then come back to me."
 
 
 - Visit your new shiny site  
-
-
-.. code-block:: sh
 
     (pelican_blog)my_blog $ firefox http://*your_username*.github.com
 
@@ -304,4 +254,3 @@ Several months later the boy has finished his training and with his new
 found enlightenment, he went back home happier for once more the focus of 
 his blog is about creating wonderful content. The days of joy went on for 
 many years... until further notice.
-
