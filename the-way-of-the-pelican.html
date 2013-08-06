@@ -132,41 +132,29 @@ git, python, a terminal, and your running Ubuntu. Otherwise, move on and
 learn them some place else then come back to me."  </p>
 <p>"With those things prepared let's begin your training."  </p>
 <ul>
-<li>Fire up your terminal and install VirtualEnv + Virtualenvwrapper  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">V</span> <span class="n">python</span><span class="o">-</span><span class="n">setuptools</span> <span class="n">python</span><span class="o">-</span><span class="n">dev</span>
-<span class="err">$</span> <span class="n">sudo</span> <span class="n">easy_install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
-<span class="err">$</span> <span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenv</span>
-<span class="err">$</span> <span class="n">sudo</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">virtualenvwrapper</span>
-</pre></div>
-
-
-<ul>
-<li>Create a virtualenv directory and set your projects directory  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="err">$</span> <span class="n">mkdir</span> <span class="o">~/</span><span class="p">.</span><span class="n">virtualenvs</span>
-<span class="err">$</span> <span class="n">mkdir</span> <span class="o">~/</span><span class="n">Projects</span>
-</pre></div>
-
-
-<ul>
+<li>
+<p>Fire up your terminal and install VirtualEnv + Virtualenvwrapper  </p>
+<p>$ sudo apt-get install -V python-setuptools python-dev
+$ sudo easy_install --upgrade pip
+$ sudo pip install virtualenv
+$ sudo pip install virtualenvwrapper</p>
+</li>
+<li>
+<p>Create a virtualenv directory and set your projects directory  </p>
+<p>$ mkdir ~/.virtualenvs
+$ mkdir ~/Projects</p>
+</li>
 <li>
 <p>Update ~/.bashrc</p>
-<p>"From here on I shall be using Vim for text editing, but you're free to
-use your favorite text editor.", the man reminded the boy.  </p>
 </li>
 </ul>
-<p>.. code-block:: sh</p>
+<p>"From here on I shall be using Vim for text editing, but you're free to use 
+your favorite text editor.", the man reminded the boy.  </p>
 <div class="codehilite"><pre><span class="err">$</span> <span class="n">vim</span> <span class="o">~/</span><span class="p">.</span><span class="n">bashrc</span>
-
-
-<span class="s">&quot;Add the following text at the end of the file.&quot;</span>
 </pre></div>
 
 
-<p>.. code-block:: sh</p>
+<p>"Add the following text at the end of the file."  </p>
 <div class="codehilite"><pre><span class="n">export</span> <span class="n">WORKON_HOME</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="p">.</span><span class="n">virtualenvs</span>
 <span class="n">export</span> <span class="n">PROJECT_HOME</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">Projects</span>
 <span class="n">source</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">virtualenvwrapper</span><span class="p">.</span><span class="n">sh</span>
@@ -174,17 +162,12 @@ use your favorite text editor.", the man reminded the boy.  </p>
 
 
 <ul>
-<li>Create a Virtual Environment  </li>
+<li>
+<p>Create a Virtual Environment  </p>
+<p>$ mkvirtualenv pelican_blog</p>
+</li>
 </ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="err">$</span> <span class="n">mkvirtualenv</span> <span class="n">pelican_blog</span>
-
-
-<span class="s">&quot;Then your prompt will turn into something like this...&quot;</span>
-</pre></div>
-
-
-<p>.. code-block:: sh</p>
+<p>"Then your prompt will turn into something like this..."  </p>
 <div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span> <span class="err">$</span>
 </pre></div>
 
@@ -193,51 +176,34 @@ use your favorite text editor.", the man reminded the boy.  </p>
 <li>
 <p>Go to your Github account and create a new repo for your blog and name 
   it:  </p>
-<p><em>your_username</em>.github.com</p>
+<p><em>your_username</em>.github.com  </p>
+</li>
+</ul>
 <p>"Using your <em>username</em> is important here so that github will know that 
 you're trying to create a Github page.", the man warned.  </p>
-</li>
+<ul>
 <li>
 <p>Clone it to your local directory  </p>
+<p>(pelican_blog) $ git clone git@github.com:<em>username</em>/<em>your_username</em>.github.com.git ~/Projects/my_blog</p>
+</li>
+<li>
+<p>Go to your working directory  </p>
+<p>(pelican_blog) $ cd ~/Projects/my_blog
+(pelican_blog)my_blog $ </p>
+</li>
+<li>
+<p>Install pelican + markdown  </p>
+<p>(pelican_blog)my_blog $ pip install pelican
+(pelican_blog)my_blog $ pip install Markdown</p>
+</li>
+<li>
+<p>Create a post in markdown  </p>
+<p>(pelican_blog)my_blog $ mkdir .content
+(pelican_blog)my_blog $ vim .content/my_first_blogpost.md</p>
 </li>
 </ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span> <span class="err">$</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="err">@</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">:*</span><span class="n">username</span><span class="err">*/</span><span class="o">*</span><span class="n">your_username</span><span class="o">*</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">.</span><span class="n">git</span> <span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">my_blog</span>
-</pre></div>
-
-
-<ul>
-<li>Go to your working directory  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span> <span class="err">$</span> <span class="n">cd</span> <span class="o">~/</span><span class="n">Projects</span><span class="o">/</span><span class="n">my_blog</span>
-<span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span>
-</pre></div>
-
-
-<ul>
-<li>Install pelican + markdown  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span>
-<span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">Markdown</span>
-</pre></div>
-
-
-<ul>
-<li>Create a post in markdown  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">mkdir</span> <span class="p">.</span><span class="n">content</span>
-<span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">vim</span> <span class="p">.</span><span class="n">content</span><span class="o">/</span><span class="n">my_first_blogpost</span><span class="p">.</span><span class="n">md</span>
-
-
-<span class="s">&quot;You must have the following spell at the top of your file in order for </span>
-<span class="n">Pelican</span> <span class="n">to</span> <span class="n">recognize</span> <span class="n">your</span> <span class="n">post</span><span class="p">.</span><span class="s">&quot;</span>
-</pre></div>
-
-
-<p>.. code-block:: sh</p>
+<p>"You must have the following spell at the top of your file in order for 
+Pelican to recognize your post."</p>
 <div class="codehilite"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">hello</span> <span class="n">world</span>
 <span class="n">Date</span><span class="o">:</span> <span class="mi">2013</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">25</span> <span class="mi">18</span><span class="o">:</span><span class="mi">00</span>
 <span class="n">Category</span><span class="o">:</span> <span class="n">code</span>
@@ -252,65 +218,40 @@ you're trying to create a Github page.", the man warned.  </p>
 
 
 <ul>
-<li>Create a settings.py</li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">vim</span> <span class="n">settings</span><span class="p">.</span><span class="n">py</span>
-</pre></div>
-
-
-<p>.. code-block:: python</p>
-<div class="codehilite"><pre><span class="n">from</span> <span class="n">__future__</span> <span class="n">import</span> <span class="n">unicode_literals</span>
-
-<span class="n">AUTHOR</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">juan</span> <span class="n">tamad</span><span class="err">&#39;</span>
-<span class="n">SITENAME</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">the</span> <span class="n">misadventures</span> <span class="n">of</span> <span class="n">juan</span> <span class="n">tamad</span><span class="err">&#39;</span>
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">http</span><span class="o">:</span><span class="c1">//juantamad.ph&#39;</span>
-<span class="n">DEFAULT_DATE_FORMAT</span> <span class="o">=</span> <span class="err">&#39;</span><span class="o">%</span><span class="n">A</span><span class="p">,</span> <span class="o">%</span><span class="n">B</span> <span class="o">%</span><span class="n">d</span><span class="p">,</span> <span class="o">%</span><span class="n">Y</span><span class="err">&#39;</span>
-
-<span class="n">GITHUB_URL</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">https</span><span class="o">:</span><span class="c1">//github.com/*username*/*your_username*.github.com&#39;</span>
-
-<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">Asia</span><span class="o">/</span><span class="n">Manila</span><span class="err">&#39;</span>
-<span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="s">&quot;More settings can be found [here](http://docs.getpelican.com/en/3.1.1/settings.html).&quot;</span>
-</pre></div>
-
-
-<ul>
+<li>
+<p>Create a settings.py</p>
+<p>(pelican_blog)my_blog $ vim settings.py</p>
+<p>from <strong>future</strong> import unicode_literals</p>
+<p>AUTHOR = 'juan tamad'
+SITENAME = 'the misadventures of juan tamad'
+SITEURL = 'http://juantamad.ph'
+DEFAULT_DATE_FORMAT = '%A, %B %d, %Y'</p>
+<p>GITHUB_URL = 'https://github.com/<em>username</em>/<em>your_username</em>.github.com'</p>
+<p>TIMEZONE = 'Asia/Manila'
+DEFAULT_PAGINATION = 1</p>
+<p>"More settings can be found <a href="http://docs.getpelican.com/en/3.1.1/settings.html">here</a>."</p>
+</li>
 <li>
 <p>Generate the HTML files</p>
 <p>SYNTAX:
 pelican <input_dir> -o <output_dir> -s <settings_file.py></p>
+<p>(pelican_blog)my_blog $ pelican .content -o . -s settings.py</p>
+</li>
+<li>
+<p>Check it out</p>
+<p>(pelican_blog)my_blog $ firefox index.html</p>
+</li>
+<li>
+<p>Push your changes to Github  </p>
+<p>(pelican_blog)my_blog $ git add -A
+(pelican_blog)my_blog $ git commit -m "The blog has begun!"
+(pelican_blog)my_blog $ git push origin master</p>
+</li>
+<li>
+<p>Visit your new shiny site  </p>
+<p>(pelican_blog)my_blog $ firefox http://<em>your_username</em>.github.com</p>
 </li>
 </ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">pelican</span> <span class="p">.</span><span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="p">.</span> <span class="o">-</span><span class="n">s</span> <span class="n">settings</span><span class="p">.</span><span class="n">py</span>
-</pre></div>
-
-
-<ul>
-<li>Check it out</li>
-</ul>
-<p>.. code-block:: sh
-    (pelican_blog)my_blog $ firefox index.html</p>
-<ul>
-<li>Push your changes to Github  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>
-<span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;The blog has begun!&quot;</span>
-<span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
-</pre></div>
-
-
-<ul>
-<li>Visit your new shiny site  </li>
-</ul>
-<p>.. code-block:: sh</p>
-<div class="codehilite"><pre><span class="p">(</span><span class="n">pelican_blog</span><span class="p">)</span><span class="n">my_blog</span> <span class="err">$</span> <span class="n">firefox</span> <span class="n">http</span><span class="o">:</span><span class="c1">//*your_username*.github.com</span>
-</pre></div>
-
-
 <h2>and finally</h2>
 <p>Several months later the boy has finished his training and with his new 
 found enlightenment, he went back home happier for once more the focus of 
