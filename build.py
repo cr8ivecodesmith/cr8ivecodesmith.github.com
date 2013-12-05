@@ -12,7 +12,7 @@ settings = {
         'tag',
         'theme',
         '*.html',
-	'*.pyc',
+        '*.pyc',
     ],
 }
 
@@ -29,4 +29,3 @@ for i in settings['purge_list']:
 call(com['build'], shell=True)
 
 # call(com['delete_index'].format(i), shell=True)
-

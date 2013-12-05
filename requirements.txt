@@ -1,0 +1,5 @@
+pelican
+pygments
+markdown
+typogrify
+
