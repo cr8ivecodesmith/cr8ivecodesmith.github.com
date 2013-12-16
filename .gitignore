@@ -1,2 +1,3 @@
 .pelican_themes
 *.pyc
+__pycache__
