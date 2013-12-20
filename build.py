@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from subprocess import call
 
 # Configurations
@@ -22,8 +24,9 @@ com = {
     'delete': 'rm -Rf {}',
 }
 
-# Start Build
-for i in settings['purge_list']:
-    call(com['delete'].format(i), shell=True)
+if __name__ == '__main__':
+    # Start Build
+    for i in settings['purge_list']:
+        call(com['delete'].format(i), shell=True)
 
-call(com['build'], shell=True)
+    call(com['build'], shell=True)
