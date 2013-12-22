@@ -48,7 +48,6 @@ new one, I highly recommend in giving them a try.
 
 I have here a couple of promotions in case you decide to try them out.
 
-Use this promo code to get a $1 discount: freedollar
+Use this promo code to get a $1 discount: `freedollar`
 
-Or visit their page with my affiliate link and make me happy :)
-http://www.namesilo.com/?rid=4193c40rx
+Or visit their page with my affiliate [link](http://www.namesilo.com/?rid=4193c40rx) and make me happy :)
