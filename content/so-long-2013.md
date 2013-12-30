@@ -11,8 +11,8 @@ high time to reflect on all of my experiences.
 
 ### tl;dr
 
-    > 2013 was a year filled with unexpected, yet pleasant turn of events.
-    > A lot of milestones have been reached earlier than expected.
+> 2013 was a year filled with unexpected, yet pleasant turn of events.
+> A lot of milestones have been reached earlier than expected.
 
 Now for the long version...
 

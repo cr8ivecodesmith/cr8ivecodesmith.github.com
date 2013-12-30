@@ -2,11 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>programmers are people too</title><link href="http://mattlebrun.com/" rel="alternate"></link><link href="http://mattlebrun.com/feeds/all-en.atom.xml" rel="self"></link><id>http://mattlebrun.com/</id><updated>2014-01-01T00:00:00+08:00</updated><entry><title>so long 2013, thanks for all the fish!</title><link href="http://mattlebrun.com/so-long-2013.html" rel="alternate"></link><updated>2014-01-01T00:00:00+08:00</updated><author><name>matt lebrun</name></author><id>tag:mattlebrun.com,2014-01-01:so-long-2013.html</id><summary type="html">&lt;p&gt;Another year has been shaved off of my remaining years of existence and its 
 high time to reflect on all of my experiences.&lt;/p&gt;
 &lt;h3&gt;tl;dr&lt;/h3&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt; &lt;span class="n"&gt;was&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;year&lt;/span&gt; &lt;span class="n"&gt;filled&lt;/span&gt; &lt;span class="n"&gt;with&lt;/span&gt; &lt;span class="n"&gt;unexpected&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;yet&lt;/span&gt; &lt;span class="n"&gt;pleasant&lt;/span&gt; &lt;span class="n"&gt;turn&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;events&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="n"&gt;lot&lt;/span&gt; &lt;span class="n"&gt;of&lt;/span&gt; &lt;span class="n"&gt;milestones&lt;/span&gt; &lt;span class="n"&gt;have&lt;/span&gt; &lt;span class="n"&gt;been&lt;/span&gt; &lt;span class="n"&gt;reached&lt;/span&gt; &lt;span class="n"&gt;earlier&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;expected&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
+&lt;blockquote&gt;
+&lt;p&gt;2013 was a year filled with unexpected, yet pleasant turn of events.
+A lot of milestones have been reached earlier than expected.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Now for the long version...&lt;/p&gt;
 &lt;h2&gt;save22&lt;/h2&gt;
 &lt;p&gt;Last April I joined the engineering team of Save22. My growth as an engineer 
