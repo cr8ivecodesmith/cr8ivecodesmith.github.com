@@ -2,6 +2,7 @@
 
 from subprocess import call
 
+
 # Configurations
 settings = {
     'input_dir': 'content',
@@ -24,9 +25,9 @@ com = {
     'delete': 'rm -Rf {}',
 }
 
-# if __name__ == '__main__':
-# Start Build
-for i in settings['purge_list']:
-    call(com['delete'].format(i), shell=True)
 
-call(com['build'], shell=True)
+if __name__ == '__main__':
+    for i in settings['purge_list']:
+        call(com['delete'].format(i), shell=True)
+
+    call(com['build'], shell=True)
