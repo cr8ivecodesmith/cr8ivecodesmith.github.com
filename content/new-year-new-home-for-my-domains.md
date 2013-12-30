@@ -44,7 +44,7 @@ are now happily hanging out on NameSilo.
 In case you're looking into transferring your domains or thinking of getting a 
 new one, I highly recommend in giving them a try.
 
-## Promoted links
+## promoted links
 
 I have here a couple of promotions in case you decide to try them out.
 
