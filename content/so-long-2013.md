@@ -48,7 +48,7 @@ a non-profit organization duly recognized by the Philippine government and the
 [Python Software Foundation](http://www.python.org/psf/).
 
 Our mission: To promote the Python programming language and to facilitate the 
-growth our local community of professionals and enthusiasts while hoping to 
+growth of our local community of professionals and enthusiasts while hoping to 
 make a small dent of improvement to the Philippine IT industry.
 
 Co-founding and running a non-profit organization takes a lot of dedication and 
