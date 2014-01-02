@@ -6,8 +6,8 @@ Slug: 4-weeks-to-fitness-experiment
 Author: matt lebrun
 
 
-> A healthy programmer, is an effective programmer.
-> ~ me, when deciding to write this post.
+> A healthy programmer, is an effective programmer.  
+> - me (when deciding to write this post)
 
 One of my key goals for this year is to get in to the habit of keeping myself 
 healthy. I believe its in our best interest as software engineers to have a 

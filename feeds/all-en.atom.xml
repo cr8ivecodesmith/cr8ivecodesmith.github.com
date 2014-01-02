@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>programmers are people too</title><link href="http://mattlebrun.com/" rel="alternate"></link><link href="http://mattlebrun.com/feeds/all-en.atom.xml" rel="self"></link><id>http://mattlebrun.com/</id><updated>2014-01-02T17:48:00+08:00</updated><entry><title>4 weeks to fitness experiment</title><link href="http://mattlebrun.com/4-weeks-to-fitness-experiment.html" rel="alternate"></link><updated>2014-01-02T17:48:00+08:00</updated><author><name>matt lebrun</name></author><id>tag:mattlebrun.com,2014-01-02:4-weeks-to-fitness-experiment.html</id><summary type="html">&lt;blockquote&gt;
-&lt;p&gt;A healthy programmer, is an effective programmer.
-~ me, when deciding to write this post.&lt;/p&gt;
+&lt;p&gt;A healthy programmer, is an effective programmer.&lt;br /&gt;
+- me (when deciding to write this post)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;One of my key goals for this year is to get in to the habit of keeping myself 
 healthy. I believe its in our best interest as software engineers to have a 
