@@ -16,11 +16,15 @@ benefits. They're best to best for building tone and muscle endurance.
 
 ## week 2 experience
 
+My week 2 workout actually started *officially* on the 3rd week of January because 
+I got inflicted with the flu on the second week. So I guess this 4-week program 
+will have to span upto the 1st week of February.
+
 Dramatic weight loss - probably water weight?
-Developed toned legs. Quads and calves are definetly more defined.
+Developed toned legs. Quads and calves are definitely more defined.
 Pilates exercises are crazy difficult.
 
-## week 2 stats *(Jan 13-17, 2014)*
+## week 2 stats *(Jan 20-24, 2014)*
 
 Weight: 65.7kg  
 Neck: 36.7cm  
