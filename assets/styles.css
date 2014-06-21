@@ -9,6 +9,8 @@ body {
     color:#fff;
     background-color:#333;
     font-family: Helvetica, Sans-Serif;
+    height: 100%;
+    width: 100%;
 }
 
 .jumbotron, .about, .action {
