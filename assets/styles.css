@@ -1,16 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Anton);
-
 body {
-    background: url('images/background.png') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     color:#fff;
-    background-color:#333;
+    background-color:#FF6600;
     font-family: Helvetica, Sans-Serif;
-    height: 100%;
-    width: 100%;
 }
 
 .jumbotron, .about, .action {
@@ -19,31 +10,41 @@ body {
 }
 
 .jumbotron {
-    font-family: 'Anton', Sans-Serif;
+    font-family: 'Lobster', cursive;
     text-shadow: -4px 4px 2px rgba(33, 33, 33, 0.9);
-    padding-top: 30%;
+    padding-top: 0;
     background-color: transparent;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .jumbotron h1 {
-    font-size: 90px;
+    font-size: 80px;
 }
 
-.about a {
-    color: inherit !important;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-shadow: -3px 3px 1.5px rgba(0, 0, 0, 0.9);
+.about a, a:visited, a:active, a:hover, a:link {
+    color: #fff !important;
+    text-decoration: none;
 }
 
 .about {
+    font-family: 'Maven Pro', sans-serif;
     padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-shadow: -2px 2px 1.5px rgba(0, 0, 0, 0.9);
 }
 
 .action {
-    padding-bottom: 90px;
+    padding-bottom: 10px;
+    color: #fff !important;
+}
+
+header img {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
 }
