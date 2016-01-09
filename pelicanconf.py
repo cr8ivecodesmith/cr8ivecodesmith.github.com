@@ -44,4 +44,4 @@ COPYRIGHT_AUTHOR = 'Matt Lebrun'
 TWITTER_USER = 'cr8ivecodemsith'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
