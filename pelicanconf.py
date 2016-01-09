@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Matt Lebrun'
 SITENAME = 'Matt Lebrun'
-SITESUBTITLE = 'a tapestry of hacks, experiments, and musings of a programmer'
+SITESUBTITLE = ('a tapestry of hacks, experiments, discoveries, lessons, '
+                'and musings of a programmer')
 SITEURL = 'https://mattlebrun.com'
 # SITEURL = 'http://localhost:8000'
 DISPLAY_PAGES_ON_MENU = True
