@@ -1,9 +1,7 @@
 Title: hello world! v2.0: reflections on leaving the 9-5 life
 Date: 2012-09-17 21:00
-Category: life
-Tags: startup
-Slug: leaving-9-to-5
-Author: matt lebrun
+Category: thoughts
+Status: published
 
 
 My recent move to finally join _(full-time)_ the tech start-up scene made me 

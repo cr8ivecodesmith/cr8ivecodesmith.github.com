@@ -1,9 +1,7 @@
 Title: so long 2013, thanks for all the fish!
 Date: 2014-01-01 00:00
-Category: life
-Tags: thoughts
-Slug: so-long-2013
-Author: matt lebrun
+Category: thoughts
+Status: published
 
 
 Another year has been shaved off of my remaining years of existence and its 

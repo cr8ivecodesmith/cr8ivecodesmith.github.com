@@ -1,9 +1,7 @@
 Title: why you don't need to know everything right away
 Date: 2012-09-18 15:30
-Category: life
-Tags: agile, productivity
-Slug: you-dont-need-to-know-everything
-Author: matt lebrun
+Category: thoughts
+Status: published
 
 
 Learning and researching about a new technology or problem area is a very 

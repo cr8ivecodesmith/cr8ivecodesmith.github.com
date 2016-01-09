@@ -1,9 +1,7 @@
 Title: new year, new home for my domains
 Date: 2013-12-21 12:40
-Category: code
-Tags: domain registrars, godaddy, namesilo
-Slug: new-year-new-home-for-my-domains
-Author: matt lebrun
+Category: hacks
+Status: published
 
 
 Its almost Christmas and the domains I've registered last year are a few days 

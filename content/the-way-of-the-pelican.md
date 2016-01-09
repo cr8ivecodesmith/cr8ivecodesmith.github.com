@@ -1,9 +1,7 @@
 Title: the way of the pelican and the order of silly walks
 Date: 2013-05-25 18:00
 Category: code
-Tags: pelican, python
-Slug: the-way-of-the-pelican
-Author: matt lebrun
+Status: published
 
 
 Once there was boy who wrote magnificent stories about technology and the

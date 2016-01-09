@@ -1,9 +1,7 @@
 Title: the setup
 Date: 2013-06-11 23:00
-Category: code
-Tags: thoughts, minimalism, geekery
-Slug: the-setup
-Author: matt lebrun
+Category: hacks
+Status: published
 
 
 I was browsing the social networks today and chanced upon 
