@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Lebrun</title><link href="https://mattlebrun.com/" rel="alternate"></link><link href="https://mattlebrun.com/feeds/code.atom.xml" rel="self"></link><id>https://mattlebrun.com/</id><updated>2013-05-25T18:00:00+08:00</updated><entry><title>the way of the pelican and the order of silly walks</title><link href="https://mattlebrun.com/the-way-of-the-pelican-and-the-order-of-silly-walks.html" rel="alternate"></link><updated>2013-05-25T18:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican-and-the-order-of-silly-walks.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Lebrun</title><link href="https://mattlebrun.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/code.atom.xml" rel="self"></link><id>https://mattlebrun.com/</id><updated>2016-09-14T16:47:00+08:00</updated><entry><title>use different git ssh key per project</title><link href="https://mattlebrun.com/use-different-git-ssh-key-per-project.html" rel="alternate"></link><published>2016-09-14T16:47:00+08:00</published><updated>2016-09-14T16:47:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2016-09-14:use-different-git-ssh-key-per-project.html</id><summary type="html">&lt;p&gt;If you happen to be using different git accounts with they're own SSH keys;
+i.e. you use different keys for deployment, personal, company A, company B, etc.&lt;/p&gt;
+&lt;p&gt;Then you probably have wondered how to tell git which key to use to manage the
+repo.&lt;/p&gt;
+&lt;p&gt;You could use the &lt;a href="https://www.git-scm.com/docs/git-remote-ext"&gt;git-remote-ext&lt;/a&gt; utility.&lt;/p&gt;
+&lt;h4&gt;cloning new projects&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone &lt;span class="s2"&gt;&amp;quot;ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;existing projects&lt;/h4&gt;
+&lt;p&gt;Edit the &lt;code&gt;.git/config&lt;/code&gt; file directly or via the terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote remove origin
+$ git remote add origin &lt;span class="s2"&gt;&amp;quot;ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;verifying new remote origin&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote -v
+
+origin ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+origin ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+
+$ git fetch
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>the way of the pelican and the order of silly walks</title><link href="https://mattlebrun.com/the-way-of-the-pelican-and-the-order-of-silly-walks.html" rel="alternate"></link><published>2013-05-25T18:00:00+08:00</published><updated>2013-05-25T18:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican-and-the-order-of-silly-walks.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
 internets. He talked about tales of discoveries and adventures, of code and
 sorcery, of... &lt;em&gt;well you get the point&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Let me tell you his story.&lt;/p&gt;
@@ -73,18 +97,18 @@ learn them some place else then come back to me."  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Fire up your terminal and install VirtualEnv + Virtualenvwrapper  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install -V python-setuptools python-dev
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo easy_install --upgrade pip
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenv
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenvwrapper
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install -V python-setuptools python-dev
+$ sudo easy_install --upgrade pip
+$ sudo pip install virtualenv
+$ sudo pip install virtualenvwrapper
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Create a virtualenv directory and set your projects directory  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir ~/.virtualenvs
-&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir ~/Projects
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mkdir ~/.virtualenvs
+$ mkdir ~/Projects
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -93,12 +117,12 @@ learn them some place else then come back to me."  &lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;"From here on I shall be using Vim for text editing, but you're free to use 
 your favorite text editor.", the man reminded the boy.  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vim ~/.bashrc
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ vim ~/.bashrc
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"Add the following text at the end of the file."  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;export WORKON_HOME=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/.virtualenvs&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;export WORKON_HOME=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/.virtualenvs&lt;/span&gt;
 &lt;span class="x"&gt;export PROJECT_HOME=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/Projects&lt;/span&gt;
 &lt;span class="x"&gt;source /usr/local/bin/virtualenvwrapper.sh&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -107,12 +131,12 @@ your favorite text editor.", the man reminded the boy.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a Virtual Environment  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv pelican_blog
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mkvirtualenv pelican_blog
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"Then your prompt will turn into something like this..."  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog) $ 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog) $ 
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -120,7 +144,7 @@ your favorite text editor.", the man reminded the boy.  &lt;/p&gt;
 &lt;li&gt;Go to your Github account and create a new repo for your blog and name 
   it:  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;*your_username*.github.com  
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*your_username*.github.com  
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -129,14 +153,14 @@ you're trying to create a Github page.", the man warned.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Clone it to your local directory  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Go to your working directory  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog) $ cd ~/Projects/my_blog
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog) $ cd ~/Projects/my_blog
 (pelican_blog)my_blog $ 
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -144,7 +168,7 @@ you're trying to create a Github page.", the man warned.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Install pelican + markdown  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ pip install pelican
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ pip install pelican
 (pelican_blog)my_blog $ pip install Markdown
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -152,14 +176,14 @@ you're trying to create a Github page.", the man warned.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a post in markdown  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ mkdir .content
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ mkdir .content
 (pelican_blog)my_blog $ vim .content/my_first_blogpost.md
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"You must have the following spell at the top of your file in order for 
 Pelican to recognize your post."&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;hello&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;hello&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;
 &lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;05&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt; &lt;span class="mi"&gt;18&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;00&lt;/span&gt;
 &lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
 &lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
@@ -175,20 +199,20 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a settings.py&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ vim settings.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ vim settings.py
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
 
-&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;juan tamad&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;the misadventures of juan tamad&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://juantamad.ph&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;DEFAULT_DATE_FORMAT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;%A, %B &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;, %Y&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;juan tamad&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;the misadventures of juan tamad&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://juantamad.ph&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;DEFAULT_DATE_FORMAT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;%A, %B &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;, %Y&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;GITHUB_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;https://github.com/*username*/*your_username*.github.com&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GITHUB_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com/*username*/*your_username*.github.com&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Asia/Manila&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Asia/Manila&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;DEFAULT_PAGINATION&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -197,26 +221,26 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Generate the HTML files&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;SYNTAX&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SYNTAX&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
 &lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;input_dir&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;output_dir&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;settings_file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;py&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ pelican .content -o . -s settings.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ pelican .content -o . -s settings.py
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Check it out&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ firefox index.html
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ firefox index.html
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Push your changes to Github  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ git add -A
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ git add -A
 (pelican_blog)my_blog $ git commit -m &amp;quot;The blog has begun!&amp;quot;
 (pelican_blog)my_blog $ git push origin master
 &lt;/pre&gt;&lt;/div&gt;
@@ -225,7 +249,7 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Visit your new shiny site  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ firefox http://*your_username*.github.com
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ firefox http://*your_username*.github.com
 &lt;/pre&gt;&lt;/div&gt;
 
 

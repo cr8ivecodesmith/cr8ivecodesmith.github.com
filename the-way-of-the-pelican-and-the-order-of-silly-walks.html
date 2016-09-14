@@ -23,7 +23,7 @@
 <div id="menu">
     <div class="pure-menu">
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="https://mattlebrun.com" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="http://localhost:8000" class="pure-menu-link">Home</a></li>
 
 
             <li class="pure-menu-item"><a href="https://mattlebrun.com/archives.html" class="pure-menu-link">All Posts</a></li>
@@ -125,18 +125,18 @@ learn them some place else then come back to me."  </p>
 <ul>
 <li>Fire up your terminal and install VirtualEnv + Virtualenvwrapper  </li>
 </ul>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install -V python-setuptools python-dev
-<span class="nv">$ </span>sudo easy_install --upgrade pip
-<span class="nv">$ </span>sudo pip install virtualenv
-<span class="nv">$ </span>sudo pip install virtualenvwrapper
+<div class="highlight"><pre><span></span>$ sudo apt-get install -V python-setuptools python-dev
+$ sudo easy_install --upgrade pip
+$ sudo pip install virtualenv
+$ sudo pip install virtualenvwrapper
 </pre></div>
 
 
 <ul>
 <li>Create a virtualenv directory and set your projects directory  </li>
 </ul>
-<div class="highlight"><pre><span class="nv">$ </span>mkdir ~/.virtualenvs
-<span class="nv">$ </span>mkdir ~/Projects
+<div class="highlight"><pre><span></span>$ mkdir ~/.virtualenvs
+$ mkdir ~/Projects
 </pre></div>
 
 
@@ -145,12 +145,12 @@ learn them some place else then come back to me."  </p>
 </ul>
 <p>"From here on I shall be using Vim for text editing, but you're free to use 
 your favorite text editor.", the man reminded the boy.  </p>
-<div class="highlight"><pre><span class="nv">$ </span>vim ~/.bashrc
+<div class="highlight"><pre><span></span>$ vim ~/.bashrc
 </pre></div>
 
 
 <p>"Add the following text at the end of the file."  </p>
-<div class="highlight"><pre><span class="x">export WORKON_HOME=</span><span class="p">$</span><span class="nv">HOME</span><span class="x">/.virtualenvs</span>
+<div class="highlight"><pre><span></span><span class="x">export WORKON_HOME=</span><span class="p">$</span><span class="nv">HOME</span><span class="x">/.virtualenvs</span>
 <span class="x">export PROJECT_HOME=</span><span class="p">$</span><span class="nv">HOME</span><span class="x">/Projects</span>
 <span class="x">source /usr/local/bin/virtualenvwrapper.sh</span>
 </pre></div>
@@ -159,12 +159,12 @@ your favorite text editor.", the man reminded the boy.  </p>
 <ul>
 <li>Create a Virtual Environment  </li>
 </ul>
-<div class="highlight"><pre><span class="nv">$ </span>mkvirtualenv pelican_blog
+<div class="highlight"><pre><span></span>$ mkvirtualenv pelican_blog
 </pre></div>
 
 
 <p>"Then your prompt will turn into something like this..."  </p>
-<div class="highlight"><pre>(pelican_blog) $ 
+<div class="highlight"><pre><span></span>(pelican_blog) $ 
 </pre></div>
 
 
@@ -172,7 +172,7 @@ your favorite text editor.", the man reminded the boy.  </p>
 <li>Go to your Github account and create a new repo for your blog and name 
   it:  </li>
 </ul>
-<div class="highlight"><pre>*your_username*.github.com  
+<div class="highlight"><pre><span></span>*your_username*.github.com  
 </pre></div>
 
 
@@ -181,14 +181,14 @@ you're trying to create a Github page.", the man warned.  </p>
 <ul>
 <li>Clone it to your local directory  </li>
 </ul>
-<div class="highlight"><pre>(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
+<div class="highlight"><pre><span></span>(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
 </pre></div>
 
 
 <ul>
 <li>Go to your working directory  </li>
 </ul>
-<div class="highlight"><pre>(pelican_blog) $ cd ~/Projects/my_blog
+<div class="highlight"><pre><span></span>(pelican_blog) $ cd ~/Projects/my_blog
 (pelican_blog)my_blog $ 
 </pre></div>
 
@@ -196,7 +196,7 @@ you're trying to create a Github page.", the man warned.  </p>
 <ul>
 <li>Install pelican + markdown  </li>
 </ul>
-<div class="highlight"><pre>(pelican_blog)my_blog $ pip install pelican
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ pip install pelican
 (pelican_blog)my_blog $ pip install Markdown
 </pre></div>
 
@@ -204,14 +204,14 @@ you're trying to create a Github page.", the man warned.  </p>
 <ul>
 <li>Create a post in markdown  </li>
 </ul>
-<div class="highlight"><pre>(pelican_blog)my_blog $ mkdir .content
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ mkdir .content
 (pelican_blog)my_blog $ vim .content/my_first_blogpost.md
 </pre></div>
 
 
 <p>"You must have the following spell at the top of your file in order for 
 Pelican to recognize your post."</p>
-<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">hello</span> <span class="n">world</span>
+<div class="highlight"><pre><span></span><span class="n">Title</span><span class="o">:</span> <span class="n">hello</span> <span class="n">world</span>
 <span class="n">Date</span><span class="o">:</span> <span class="mi">2013</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">25</span> <span class="mi">18</span><span class="o">:</span><span class="mi">00</span>
 <span class="n">Category</span><span class="o">:</span> <span class="n">code</span>
 <span class="n">Tags</span><span class="o">:</span> <span class="n">pelican</span><span class="o">,</span> <span class="n">python</span>
@@ -227,20 +227,20 @@ Pelican to recognize your post."</p>
 <ul>
 <li>Create a settings.py</li>
 </ul>
-<div class="highlight"><pre>(pelican_blog)my_blog $ vim settings.py
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ vim settings.py
 </pre></div>
 
 
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
 
-<span class="n">AUTHOR</span> <span class="o">=</span> <span class="s">&#39;juan tamad&#39;</span>
-<span class="n">SITENAME</span> <span class="o">=</span> <span class="s">&#39;the misadventures of juan tamad&#39;</span>
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="s">&#39;http://juantamad.ph&#39;</span>
-<span class="n">DEFAULT_DATE_FORMAT</span> <span class="o">=</span> <span class="s">&#39;%A, %B </span><span class="si">%d</span><span class="s">, %Y&#39;</span>
+<span class="n">AUTHOR</span> <span class="o">=</span> <span class="s1">&#39;juan tamad&#39;</span>
+<span class="n">SITENAME</span> <span class="o">=</span> <span class="s1">&#39;the misadventures of juan tamad&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;http://juantamad.ph&#39;</span>
+<span class="n">DEFAULT_DATE_FORMAT</span> <span class="o">=</span> <span class="s1">&#39;%A, %B </span><span class="si">%d</span><span class="s1">, %Y&#39;</span>
 
-<span class="n">GITHUB_URL</span> <span class="o">=</span> <span class="s">&#39;https://github.com/*username*/*your_username*.github.com&#39;</span>
+<span class="n">GITHUB_URL</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/*username*/*your_username*.github.com&#39;</span>
 
-<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s">&#39;Asia/Manila&#39;</span>
+<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s1">&#39;Asia/Manila&#39;</span>
 <span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 
@@ -249,26 +249,26 @@ Pelican to recognize your post."</p>
 <ul>
 <li>Generate the HTML files</li>
 </ul>
-<div class="highlight"><pre><span class="n">SYNTAX</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><span class="n">SYNTAX</span><span class="o">:</span>
 <span class="n">pelican</span> <span class="o">&lt;</span><span class="n">input_dir</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">o</span> <span class="o">&lt;</span><span class="n">output_dir</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">s</span> <span class="o">&lt;</span><span class="n">settings_file</span><span class="o">.</span><span class="na">py</span><span class="o">&gt;</span>
 </pre></div>
 
 
-<div class="highlight"><pre>(pelican_blog)my_blog $ pelican .content -o . -s settings.py
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ pelican .content -o . -s settings.py
 </pre></div>
 
 
 <ul>
 <li>Check it out</li>
 </ul>
-<div class="highlight"><pre>(pelican_blog)my_blog $ firefox index.html
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ firefox index.html
 </pre></div>
 
 
 <ul>
 <li>Push your changes to Github  </li>
 </ul>
-<div class="highlight"><pre>(pelican_blog)my_blog $ git add -A
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ git add -A
 (pelican_blog)my_blog $ git commit -m &quot;The blog has begun!&quot;
 (pelican_blog)my_blog $ git push origin master
 </pre></div>
@@ -277,7 +277,7 @@ Pelican to recognize your post."</p>
 <ul>
 <li>Visit your new shiny site  </li>
 </ul>
-<div class="highlight"><pre>(pelican_blog)my_blog $ firefox http://*your_username*.github.com
+<div class="highlight"><pre><span></span>(pelican_blog)my_blog $ firefox http://*your_username*.github.com
 </pre></div>
 
 
@@ -304,7 +304,7 @@ many years... until further notice.</p>
                     <a class="pure-menu-link" href="https://mattlebrun.com/archives.html">Archive</a>
                     </li>
                     <li class="pure-menu-item">
-                    <a class="pure-menu-link" href="https://mattlebrun.com/feeds/all.atom.xml">Feeds</a>
+                    <a class="pure-menu-link" href="http://localhost:8000/feeds/all.atom.xml">Feeds</a>
                     </li>
                 </ul>
             </div>

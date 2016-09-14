@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Lebrun</title><link href="https://mattlebrun.com/" rel="alternate"></link><link href="https://mattlebrun.com/feeds/all-en.atom.xml" rel="self"></link><id>https://mattlebrun.com/</id><updated>2014-01-01T00:00:00+08:00</updated><entry><title>so long 2013, thanks for all the fish!</title><link href="https://mattlebrun.com/so-long-2013-thanks-for-all-the-fish.html" rel="alternate"></link><updated>2014-01-01T00:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2014-01-01:so-long-2013-thanks-for-all-the-fish.html</id><summary type="html">&lt;p&gt;Another year has been shaved off of my remaining years of existence and its 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Lebrun</title><link href="https://mattlebrun.com/" rel="alternate"></link><link href="http://localhost:8000/feeds/all-en.atom.xml" rel="self"></link><id>https://mattlebrun.com/</id><updated>2016-09-14T16:47:00+08:00</updated><entry><title>use different git ssh key per project</title><link href="https://mattlebrun.com/use-different-git-ssh-key-per-project.html" rel="alternate"></link><published>2016-09-14T16:47:00+08:00</published><updated>2016-09-14T16:47:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2016-09-14:use-different-git-ssh-key-per-project.html</id><summary type="html">&lt;p&gt;If you happen to be using different git accounts with they're own SSH keys;
+i.e. you use different keys for deployment, personal, company A, company B, etc.&lt;/p&gt;
+&lt;p&gt;Then you probably have wondered how to tell git which key to use to manage the
+repo.&lt;/p&gt;
+&lt;p&gt;You could use the &lt;a href="https://www.git-scm.com/docs/git-remote-ext"&gt;git-remote-ext&lt;/a&gt; utility.&lt;/p&gt;
+&lt;h4&gt;cloning new projects&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone &lt;span class="s2"&gt;&amp;quot;ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;existing projects&lt;/h4&gt;
+&lt;p&gt;Edit the &lt;code&gt;.git/config&lt;/code&gt; file directly or via the terminal:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote remove origin
+$ git remote add origin &lt;span class="s2"&gt;&amp;quot;ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;verifying new remote origin&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git remote -v
+
+origin ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+origin ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+
+$ git fetch
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>so long 2013, thanks for all the fish!</title><link href="https://mattlebrun.com/so-long-2013-thanks-for-all-the-fish.html" rel="alternate"></link><published>2014-01-01T00:00:00+08:00</published><updated>2014-01-01T00:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2014-01-01:so-long-2013-thanks-for-all-the-fish.html</id><summary type="html">&lt;p&gt;Another year has been shaved off of my remaining years of existence and its 
 high time to reflect on all of my experiences.&lt;/p&gt;
 &lt;h3&gt;tl;dr&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -53,7 +77,7 @@ very happy with this humble abode.&lt;/p&gt;
 &lt;p&gt;For me, 2013 has really been the most eventful year yet. Most of the things 
 that have happened are but a starting point so I'm expecting challenges to come 
 this year. If anything, I'm actually looking forward to it.&lt;/p&gt;
-&lt;p&gt;2014 here we go!&lt;/p&gt;</summary></entry><entry><title>new year, new home for my domains</title><link href="https://mattlebrun.com/new-year-new-home-for-my-domains.html" rel="alternate"></link><updated>2013-12-21T12:40:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-12-21:new-year-new-home-for-my-domains.html</id><summary type="html">&lt;p&gt;Its almost Christmas and the domains I've registered last year are a few days 
+&lt;p&gt;2014 here we go!&lt;/p&gt;</summary></entry><entry><title>new year, new home for my domains</title><link href="https://mattlebrun.com/new-year-new-home-for-my-domains.html" rel="alternate"></link><published>2013-12-21T12:40:00+08:00</published><updated>2013-12-21T12:40:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-12-21:new-year-new-home-for-my-domains.html</id><summary type="html">&lt;p&gt;Its almost Christmas and the domains I've registered last year are a few days 
 short of expiration. Its time to make a choice!&lt;/p&gt;
 &lt;h2&gt;GoDaddy - a brief background&lt;/h2&gt;
 &lt;p&gt;Last year I got myself several nice domains for a very cheap price at GoDaddy. 
@@ -83,7 +107,7 @@ new one, I highly recommend in giving them a try.&lt;/p&gt;
 &lt;h2&gt;promoted links&lt;/h2&gt;
 &lt;p&gt;I have here a couple of promotions in case you decide to try them out.&lt;/p&gt;
 &lt;p&gt;Use this promo code to get a $1 discount: &lt;code&gt;freedollar&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Or visit their page with my affiliate &lt;a href="http://www.namesilo.com/?rid=4193c40rx"&gt;link&lt;/a&gt; and make me happy :)&lt;/p&gt;</summary></entry><entry><title>the setup</title><link href="https://mattlebrun.com/the-setup.html" rel="alternate"></link><updated>2013-06-11T23:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-06-11:the-setup.html</id><summary type="html">&lt;p&gt;I was browsing the social networks today and chanced upon 
+&lt;p&gt;Or visit their page with my affiliate &lt;a href="http://www.namesilo.com/?rid=4193c40rx"&gt;link&lt;/a&gt; and make me happy :)&lt;/p&gt;</summary></entry><entry><title>the setup</title><link href="https://mattlebrun.com/the-setup.html" rel="alternate"></link><published>2013-06-11T23:00:00+08:00</published><updated>2013-06-11T23:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-06-11:the-setup.html</id><summary type="html">&lt;p&gt;I was browsing the social networks today and chanced upon 
 &lt;a href="http://usesthis.com/"&gt;The Setup&lt;/a&gt; which is a website that features 
 interviews of people &lt;em&gt;(mostly geeks)&lt;/em&gt; where they get to talk about what 
 they do and then elaborate more on what tools (hardware and software) they 
@@ -167,7 +191,7 @@ would emerge. &lt;/p&gt;
 my PC and tablet. &lt;/p&gt;
 &lt;p&gt;I'd also wish that Ubuntu could be a bit more up to date with the latest 
 kernel and do a rolling release just like Arch. &lt;/p&gt;
-&lt;p&gt;If I had the budget, I'd get something like a Galaxy Note 2 or Nexus 4. &lt;/p&gt;</summary></entry><entry><title>the way of the pelican and the order of silly walks</title><link href="https://mattlebrun.com/the-way-of-the-pelican-and-the-order-of-silly-walks.html" rel="alternate"></link><updated>2013-05-25T18:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican-and-the-order-of-silly-walks.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
+&lt;p&gt;If I had the budget, I'd get something like a Galaxy Note 2 or Nexus 4. &lt;/p&gt;</summary></entry><entry><title>the way of the pelican and the order of silly walks</title><link href="https://mattlebrun.com/the-way-of-the-pelican-and-the-order-of-silly-walks.html" rel="alternate"></link><published>2013-05-25T18:00:00+08:00</published><updated>2013-05-25T18:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican-and-the-order-of-silly-walks.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
 internets. He talked about tales of discoveries and adventures, of code and
 sorcery, of... &lt;em&gt;well you get the point&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Let me tell you his story.&lt;/p&gt;
@@ -241,18 +265,18 @@ learn them some place else then come back to me."  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Fire up your terminal and install VirtualEnv + Virtualenvwrapper  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install -V python-setuptools python-dev
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo easy_install --upgrade pip
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenv
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenvwrapper
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install -V python-setuptools python-dev
+$ sudo easy_install --upgrade pip
+$ sudo pip install virtualenv
+$ sudo pip install virtualenvwrapper
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Create a virtualenv directory and set your projects directory  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir ~/.virtualenvs
-&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir ~/Projects
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mkdir ~/.virtualenvs
+$ mkdir ~/Projects
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -261,12 +285,12 @@ learn them some place else then come back to me."  &lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;"From here on I shall be using Vim for text editing, but you're free to use 
 your favorite text editor.", the man reminded the boy.  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;vim ~/.bashrc
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ vim ~/.bashrc
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"Add the following text at the end of the file."  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;export WORKON_HOME=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/.virtualenvs&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;export WORKON_HOME=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/.virtualenvs&lt;/span&gt;
 &lt;span class="x"&gt;export PROJECT_HOME=&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="x"&gt;/Projects&lt;/span&gt;
 &lt;span class="x"&gt;source /usr/local/bin/virtualenvwrapper.sh&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -275,12 +299,12 @@ your favorite text editor.", the man reminded the boy.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a Virtual Environment  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv pelican_blog
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ mkvirtualenv pelican_blog
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"Then your prompt will turn into something like this..."  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog) $ 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog) $ 
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -288,7 +312,7 @@ your favorite text editor.", the man reminded the boy.  &lt;/p&gt;
 &lt;li&gt;Go to your Github account and create a new repo for your blog and name 
   it:  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;*your_username*.github.com  
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;*your_username*.github.com  
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -297,14 +321,14 @@ you're trying to create a Github page.", the man warned.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Clone it to your local directory  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog) $ git clone git@github.com:*username*/*your_username*.github.com.git ~/Projects/my_blog
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Go to your working directory  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog) $ cd ~/Projects/my_blog
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog) $ cd ~/Projects/my_blog
 (pelican_blog)my_blog $ 
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -312,7 +336,7 @@ you're trying to create a Github page.", the man warned.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Install pelican + markdown  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ pip install pelican
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ pip install pelican
 (pelican_blog)my_blog $ pip install Markdown
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -320,14 +344,14 @@ you're trying to create a Github page.", the man warned.  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a post in markdown  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ mkdir .content
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ mkdir .content
 (pelican_blog)my_blog $ vim .content/my_first_blogpost.md
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"You must have the following spell at the top of your file in order for 
 Pelican to recognize your post."&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;hello&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Title&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;hello&lt;/span&gt; &lt;span class="n"&gt;world&lt;/span&gt;
 &lt;span class="n"&gt;Date&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;05&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt; &lt;span class="mi"&gt;18&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;00&lt;/span&gt;
 &lt;span class="n"&gt;Category&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
 &lt;span class="n"&gt;Tags&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt;
@@ -343,20 +367,20 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a settings.py&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ vim settings.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ vim settings.py
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
 
-&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;juan tamad&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;the misadventures of juan tamad&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;http://juantamad.ph&amp;#39;&lt;/span&gt;
-&lt;span class="n"&gt;DEFAULT_DATE_FORMAT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;%A, %B &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s"&gt;, %Y&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;juan tamad&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;the misadventures of juan tamad&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://juantamad.ph&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;DEFAULT_DATE_FORMAT&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;%A, %B &lt;/span&gt;&lt;span class="si"&gt;%d&lt;/span&gt;&lt;span class="s1"&gt;, %Y&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;GITHUB_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;https://github.com/*username*/*your_username*.github.com&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;GITHUB_URL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://github.com/*username*/*your_username*.github.com&amp;#39;&lt;/span&gt;
 
-&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Asia/Manila&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Asia/Manila&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;DEFAULT_PAGINATION&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -365,26 +389,26 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Generate the HTML files&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;SYNTAX&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;SYNTAX&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
 &lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;input_dir&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;output_dir&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;settings_file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;py&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ pelican .content -o . -s settings.py
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ pelican .content -o . -s settings.py
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Check it out&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ firefox index.html
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ firefox index.html
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;Push your changes to Github  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ git add -A
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ git add -A
 (pelican_blog)my_blog $ git commit -m &amp;quot;The blog has begun!&amp;quot;
 (pelican_blog)my_blog $ git push origin master
 &lt;/pre&gt;&lt;/div&gt;
@@ -393,7 +417,7 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Visit your new shiny site  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;(pelican_blog)my_blog $ firefox http://*your_username*.github.com
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(pelican_blog)my_blog $ firefox http://*your_username*.github.com
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -401,7 +425,7 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;p&gt;Several months later the boy has finished his training and with his new 
 found enlightenment, he went back home happier for once more the focus of 
 his blog is about creating wonderful content. The days of joy went on for 
-many years... until further notice.&lt;/p&gt;</summary></entry><entry><title>why you don't need to know everything right away</title><link href="https://mattlebrun.com/why-you-dont-need-to-know-everything-right-away.html" rel="alternate"></link><updated>2012-09-18T15:30:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2012-09-18:why-you-dont-need-to-know-everything-right-away.html</id><summary type="html">&lt;p&gt;Learning and researching about a new technology or problem area is a very 
+many years... until further notice.&lt;/p&gt;</summary></entry><entry><title>why you don't need to know everything right away</title><link href="https://mattlebrun.com/why-you-dont-need-to-know-everything-right-away.html" rel="alternate"></link><published>2012-09-18T15:30:00+08:00</published><updated>2012-09-18T15:30:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2012-09-18:why-you-dont-need-to-know-everything-right-away.html</id><summary type="html">&lt;p&gt;Learning and researching about a new technology or problem area is a very 
 exciting activity for programmers. &lt;/p&gt;
 &lt;p&gt;Curiosity, for a programmer, is like an insatiable impulse. An unquenchable 
 thirst. You take your time as you browse through one information to 
@@ -420,7 +444,7 @@ experience increases as well. &lt;/p&gt;
 &lt;p&gt;Your clients simply can't afford a prolonged or delayed release and neither 
 will you have that sense of accomplishment from actually shipping 
 something. &lt;/p&gt;
-&lt;p&gt;So how do you deal with your insatiable curiosity? &lt;/p&gt;</summary></entry><entry><title>hello world! v2.0: reflections on leaving the 9-5 life</title><link href="https://mattlebrun.com/hello-world-v20-reflections-on-leaving-the-9-5-life.html" rel="alternate"></link><updated>2012-09-17T21:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2012-09-17:hello-world-v20-reflections-on-leaving-the-9-5-life.html</id><summary type="html">&lt;p&gt;My recent move to finally join &lt;em&gt;(full-time)&lt;/em&gt; the tech start-up scene made me 
+&lt;p&gt;So how do you deal with your insatiable curiosity? &lt;/p&gt;</summary></entry><entry><title>hello world! v2.0: reflections on leaving the 9-5 life</title><link href="https://mattlebrun.com/hello-world-v20-reflections-on-leaving-the-9-5-life.html" rel="alternate"></link><published>2012-09-17T21:00:00+08:00</published><updated>2012-09-17T21:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2012-09-17:hello-world-v20-reflections-on-leaving-the-9-5-life.html</id><summary type="html">&lt;p&gt;My recent move to finally join &lt;em&gt;(full-time)&lt;/em&gt; the tech start-up scene made me 
 reflect once again on this topic. &lt;/p&gt;
 &lt;p&gt;I feel like I've just stepped into the "unknown abyss" that we call the 
 entrepreneurial road where a steady monthly paycheck is out of the 

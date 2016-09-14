@@ -1,13 +1,10 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Matt Lebrun'
 SITENAME = 'Matt Lebrun'
 SITESUBTITLE = ('a tapestry of hacks, experiments, discoveries, lessons, '
                 'and musings of a programmer')
-SITEURL = 'https://mattlebrun.com'
-# SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 DISPLAY_PAGES_ON_MENU = True
 SUMMARY_MAX_LENGTH = (50)
 DEFAULT_PAGINATION = 5
@@ -41,7 +38,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('@cr8ivecodesmith', 'https://twitter.com/cr8ivecodesmith'),
           ('code', 'https://github.com/cr8ivecodesmith'),
           ('community', 'http://python.ph'),
-          ('email', 'mailto:talk@mattlebrun.com'),)
+          ('email', 'mailto:matt@lebrun.org'),)
 
 # Meta data
 DEFAULT_METADATA = {
@@ -55,4 +52,7 @@ COPYRIGHT_TEXT = '&copy; 2016 Matt Lebrun'
 TWITTER_USERNAME = 'cr8ivecodesmith'
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
+
+# Theme
+THEME = 'zenmatt'
