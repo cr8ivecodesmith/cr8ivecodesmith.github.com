@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Lebrun</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all-en.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2016-10-25T16:04:00+08:00</updated><entry><title>getting indefinite input feed in hackerrank</title><link href="http://localhost:8000/getting-indefinite-input-feed-in-hackerrank.html" rel="alternate"></link><published>2016-10-25T16:04:00+08:00</published><updated>2016-10-25T16:04:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2016-10-25:getting-indefinite-input-feed-in-hackerrank.html</id><summary type="html">&lt;p&gt;If you have been using &lt;a href="http://www.hackerrank.com"&gt;HackerRank&lt;/a&gt; and encountered problems that accepts an indefinite amount of input from &lt;code&gt;STDIN&lt;/code&gt; like this:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Matt Lebrun</title><link href="https://mattlebrun.com/" rel="alternate"></link><link href="https://mattlebrun.com/feeds/all-en.atom.xml" rel="self"></link><id>https://mattlebrun.com/</id><updated>2016-10-25T16:04:00+08:00</updated><entry><title>getting indefinite input feed in hackerrank</title><link href="https://mattlebrun.com/getting-indefinite-input-feed-in-hackerrank.html" rel="alternate"></link><published>2016-10-25T16:04:00+08:00</published><updated>2016-10-25T16:04:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2016-10-25:getting-indefinite-input-feed-in-hackerrank.html</id><summary type="html">&lt;p&gt;If you have been using &lt;a href="http://www.hackerrank.com"&gt;HackerRank&lt;/a&gt; and encountered problems that accepts an indefinite amount of input from &lt;code&gt;STDIN&lt;/code&gt; like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;1 1 1 0 0 0
 0 1 0 0 0 0
 1 1 1 0 0 0
@@ -28,7 +28,7 @@
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category></entry><entry><title>use different git ssh key per project</title><link href="http://localhost:8000/use-different-git-ssh-key-per-project.html" rel="alternate"></link><published>2016-09-14T16:47:00+08:00</published><updated>2016-09-14T16:47:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2016-09-14:use-different-git-ssh-key-per-project.html</id><summary type="html">&lt;p&gt;If you happen to be using different git accounts with they're own SSH keys;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category></entry><entry><title>use different git ssh key per project</title><link href="https://mattlebrun.com/use-different-git-ssh-key-per-project.html" rel="alternate"></link><published>2016-09-14T16:47:00+08:00</published><updated>2016-09-14T16:47:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2016-09-14:use-different-git-ssh-key-per-project.html</id><summary type="html">&lt;p&gt;If you happen to be using different git accounts with they're own SSH keys;
 i.e. you use different keys for deployment, personal, company A, company B, etc.&lt;/p&gt;
 &lt;p&gt;Then you probably have wondered how to tell git which key to use to manage the
 repo.&lt;/p&gt;
@@ -52,7 +52,7 @@ origin ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git &lt;span cl
 origin ext::ssh -i /path/ssh/key git@github.com %S /gituser/repo.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
 
 $ git fetch
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>so long 2013, thanks for all the fish!</title><link href="http://localhost:8000/so-long-2013-thanks-for-all-the-fish.html" rel="alternate"></link><published>2014-01-01T00:00:00+08:00</published><updated>2014-01-01T00:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2014-01-01:so-long-2013-thanks-for-all-the-fish.html</id><summary type="html">&lt;p&gt;Another year has been shaved off of my remaining years of existence and its 
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>so long 2013, thanks for all the fish!</title><link href="https://mattlebrun.com/so-long-2013-thanks-for-all-the-fish.html" rel="alternate"></link><published>2014-01-01T00:00:00+08:00</published><updated>2014-01-01T00:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2014-01-01:so-long-2013-thanks-for-all-the-fish.html</id><summary type="html">&lt;p&gt;Another year has been shaved off of my remaining years of existence and its 
 high time to reflect on all of my experiences.&lt;/p&gt;
 &lt;h3&gt;tl;dr&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -106,7 +106,7 @@ very happy with this humble abode.&lt;/p&gt;
 &lt;p&gt;For me, 2013 has really been the most eventful year yet. Most of the things 
 that have happened are but a starting point so I'm expecting challenges to come 
 this year. If anything, I'm actually looking forward to it.&lt;/p&gt;
-&lt;p&gt;2014 here we go!&lt;/p&gt;</summary></entry><entry><title>new year, new home for my domains</title><link href="http://localhost:8000/new-year-new-home-for-my-domains.html" rel="alternate"></link><published>2013-12-21T12:40:00+08:00</published><updated>2013-12-21T12:40:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2013-12-21:new-year-new-home-for-my-domains.html</id><summary type="html">&lt;p&gt;Its almost Christmas and the domains I've registered last year are a few days 
+&lt;p&gt;2014 here we go!&lt;/p&gt;</summary></entry><entry><title>new year, new home for my domains</title><link href="https://mattlebrun.com/new-year-new-home-for-my-domains.html" rel="alternate"></link><published>2013-12-21T12:40:00+08:00</published><updated>2013-12-21T12:40:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-12-21:new-year-new-home-for-my-domains.html</id><summary type="html">&lt;p&gt;Its almost Christmas and the domains I've registered last year are a few days 
 short of expiration. Its time to make a choice!&lt;/p&gt;
 &lt;h2&gt;GoDaddy - a brief background&lt;/h2&gt;
 &lt;p&gt;Last year I got myself several nice domains for a very cheap price at GoDaddy. 
@@ -136,7 +136,7 @@ new one, I highly recommend in giving them a try.&lt;/p&gt;
 &lt;h2&gt;promoted links&lt;/h2&gt;
 &lt;p&gt;I have here a couple of promotions in case you decide to try them out.&lt;/p&gt;
 &lt;p&gt;Use this promo code to get a $1 discount: &lt;code&gt;freedollar&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Or visit their page with my affiliate &lt;a href="http://www.namesilo.com/?rid=4193c40rx"&gt;link&lt;/a&gt; and make me happy :)&lt;/p&gt;</summary></entry><entry><title>the setup</title><link href="http://localhost:8000/the-setup.html" rel="alternate"></link><published>2013-06-11T23:00:00+08:00</published><updated>2013-06-11T23:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2013-06-11:the-setup.html</id><summary type="html">&lt;p&gt;I was browsing the social networks today and chanced upon 
+&lt;p&gt;Or visit their page with my affiliate &lt;a href="http://www.namesilo.com/?rid=4193c40rx"&gt;link&lt;/a&gt; and make me happy :)&lt;/p&gt;</summary></entry><entry><title>the setup</title><link href="https://mattlebrun.com/the-setup.html" rel="alternate"></link><published>2013-06-11T23:00:00+08:00</published><updated>2013-06-11T23:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-06-11:the-setup.html</id><summary type="html">&lt;p&gt;I was browsing the social networks today and chanced upon 
 &lt;a href="http://usesthis.com/"&gt;The Setup&lt;/a&gt; which is a website that features 
 interviews of people &lt;em&gt;(mostly geeks)&lt;/em&gt; where they get to talk about what 
 they do and then elaborate more on what tools (hardware and software) they 
@@ -220,7 +220,7 @@ would emerge. &lt;/p&gt;
 my PC and tablet. &lt;/p&gt;
 &lt;p&gt;I'd also wish that Ubuntu could be a bit more up to date with the latest 
 kernel and do a rolling release just like Arch. &lt;/p&gt;
-&lt;p&gt;If I had the budget, I'd get something like a Galaxy Note 2 or Nexus 4. &lt;/p&gt;</summary></entry><entry><title>the way of the pelican and the order of silly walks</title><link href="http://localhost:8000/the-way-of-the-pelican-and-the-order-of-silly-walks.html" rel="alternate"></link><published>2013-05-25T18:00:00+08:00</published><updated>2013-05-25T18:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2013-05-25:the-way-of-the-pelican-and-the-order-of-silly-walks.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
+&lt;p&gt;If I had the budget, I'd get something like a Galaxy Note 2 or Nexus 4. &lt;/p&gt;</summary></entry><entry><title>the way of the pelican and the order of silly walks</title><link href="https://mattlebrun.com/the-way-of-the-pelican-and-the-order-of-silly-walks.html" rel="alternate"></link><published>2013-05-25T18:00:00+08:00</published><updated>2013-05-25T18:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2013-05-25:the-way-of-the-pelican-and-the-order-of-silly-walks.html</id><summary type="html">&lt;p&gt;Once there was boy who wrote magnificent stories about technology and the
 internets. He talked about tales of discoveries and adventures, of code and
 sorcery, of... &lt;em&gt;well you get the point&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Let me tell you his story.&lt;/p&gt;
@@ -454,7 +454,7 @@ Pelican to recognize your post."&lt;/p&gt;
 &lt;p&gt;Several months later the boy has finished his training and with his new 
 found enlightenment, he went back home happier for once more the focus of 
 his blog is about creating wonderful content. The days of joy went on for 
-many years... until further notice.&lt;/p&gt;</summary></entry><entry><title>why you don't need to know everything right away</title><link href="http://localhost:8000/why-you-dont-need-to-know-everything-right-away.html" rel="alternate"></link><published>2012-09-18T15:30:00+08:00</published><updated>2012-09-18T15:30:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2012-09-18:why-you-dont-need-to-know-everything-right-away.html</id><summary type="html">&lt;p&gt;Learning and researching about a new technology or problem area is a very 
+many years... until further notice.&lt;/p&gt;</summary></entry><entry><title>why you don't need to know everything right away</title><link href="https://mattlebrun.com/why-you-dont-need-to-know-everything-right-away.html" rel="alternate"></link><published>2012-09-18T15:30:00+08:00</published><updated>2012-09-18T15:30:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2012-09-18:why-you-dont-need-to-know-everything-right-away.html</id><summary type="html">&lt;p&gt;Learning and researching about a new technology or problem area is a very 
 exciting activity for programmers. &lt;/p&gt;
 &lt;p&gt;Curiosity, for a programmer, is like an insatiable impulse. An unquenchable 
 thirst. You take your time as you browse through one information to 
@@ -473,7 +473,7 @@ experience increases as well. &lt;/p&gt;
 &lt;p&gt;Your clients simply can't afford a prolonged or delayed release and neither 
 will you have that sense of accomplishment from actually shipping 
 something. &lt;/p&gt;
-&lt;p&gt;So how do you deal with your insatiable curiosity? &lt;/p&gt;</summary></entry><entry><title>hello world! v2.0: reflections on leaving the 9-5 life</title><link href="http://localhost:8000/hello-world-v20-reflections-on-leaving-the-9-5-life.html" rel="alternate"></link><published>2012-09-17T21:00:00+08:00</published><updated>2012-09-17T21:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:localhost:8000,2012-09-17:hello-world-v20-reflections-on-leaving-the-9-5-life.html</id><summary type="html">&lt;p&gt;My recent move to finally join &lt;em&gt;(full-time)&lt;/em&gt; the tech start-up scene made me 
+&lt;p&gt;So how do you deal with your insatiable curiosity? &lt;/p&gt;</summary></entry><entry><title>hello world! v2.0: reflections on leaving the 9-5 life</title><link href="https://mattlebrun.com/hello-world-v20-reflections-on-leaving-the-9-5-life.html" rel="alternate"></link><published>2012-09-17T21:00:00+08:00</published><updated>2012-09-17T21:00:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2012-09-17:hello-world-v20-reflections-on-leaving-the-9-5-life.html</id><summary type="html">&lt;p&gt;My recent move to finally join &lt;em&gt;(full-time)&lt;/em&gt; the tech start-up scene made me 
 reflect once again on this topic. &lt;/p&gt;
 &lt;p&gt;I feel like I've just stepped into the "unknown abyss" that we call the 
 entrepreneurial road where a steady monthly paycheck is out of the 
