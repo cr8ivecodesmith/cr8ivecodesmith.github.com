@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matt Lebrun">
+    <meta name="description" content="a tapestry of hacks, experiments, discoveries, lessons, and musings of a programmer">
+
+    <link rel="icon" type="image/ico" href="../theme/img/favicon.ico">
+
+    <title>Matt Lebrun : getting indefinite input feed in hackerrank</title>
+
+    <link rel="stylesheet" href="../theme/css/main.css">
+</head>
+
+<body>
+<div id="layout">
+<!-- Menu toggle -->
+<a href="#menu" id="menuLink" class="menu-link">
+    <!-- Hamburger icon -->
+    <span></span>
+</a>
+<div id="menu">
+    <div class="pure-menu">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="http://localhost:8000" class="pure-menu-link">Home</a></li>
+
+
+            <li class="pure-menu-item"><a href="../archives.html" class="pure-menu-link">All Posts</a></li>
+        </ul>
+    </div>
+</div>    <div id="main">
+        <!-- SITE_HEADER:START -->
+        <header class="header">
+            <h1><a href="../">Matt Lebrun</a></h1>
+            <h2>a tapestry of hacks, experiments, discoveries, lessons, and musings of a programmer</h2>
+        </header>
+        <!-- SITE_HEADER:END -->
+
+        <div class="content">
+<article role="article">
+    <header>
+        <h1>getting indefinite input feed in hackerrank</h1>
+        <p class="article-meta">
+            <time class="entry-date" datetime="2016-10-25T16:04:00+08:00">
+                Oct 25, 2016
+            </time>
+ |                 <span class="category"><a href="../category/code.html">
+                    code
+                </a></span>
+        </p>
+    </header>
+    <div class="article-content">
+        <p>If you have been using <a href="http://www.hackerrank.com">HackerRank</a> and encountered problems that accepts an indefinite amount of input from <code>STDIN</code> like this:</p>
+<div class="highlight"><pre><span></span>1 1 1 0 0 0
+0 1 0 0 0 0
+1 1 1 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+</pre></div>
+
+
+<p>and wodered how to get all that in a single list for later processing, here's a code snippet:</p>
+<div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; your code goes here &quot;&quot;&quot;</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">EOFError</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+    <span class="sd">&quot;&quot;&quot; your code goes here &quot;&quot;&quot;</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+    </div>
+    <footer class="article-footer">
+    </footer>
+</article>
+        </div>
+
+        <!-- SITE_FOOTER:START -->
+        <footer class="footer">
+            <div class="pure-menu pure-menu-horizontal">
+                <p class="pure-menu-heading">&copy; 2016 Matt Lebrun</p>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                    <a class="pure-menu-link" href="https://twitter.com/cr8ivecodesmith">Twitter</a>
+                    </li>
+                    <li class="pure-menu-item">
+                    <a class="pure-menu-link" href="../archives.html">Archive</a>
+                    </li>
+                    <li class="pure-menu-item">
+                    <a class="pure-menu-link" href="http://localhost:8000/feeds/all.atom.xml">Feeds</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- SITE_FOOTER:END -->
+    </div> <!-- END:main -->
+</div> <!-- END:layout -->
+<!--
+JS Section
+-->
+<script src="../theme/js/pure/ui.js"></script>
+</body>
+</html>
