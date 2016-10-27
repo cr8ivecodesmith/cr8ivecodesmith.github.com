@@ -39,6 +39,6 @@ if __name__ == '__main__':
     main()
 ```
 
-
+From my observation, it seems the input is coming from a file and its being streamed to `STDIN` one line at a time.
 
 [1]: http://www.hackerrank.com

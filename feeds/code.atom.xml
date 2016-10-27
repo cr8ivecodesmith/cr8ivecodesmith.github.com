@@ -28,7 +28,10 @@
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category></entry><entry><title>use different git ssh key per project</title><link href="https://mattlebrun.com/use-different-git-ssh-key-per-project.html" rel="alternate"></link><published>2016-09-14T16:47:00+08:00</published><updated>2016-09-14T16:47:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2016-09-14:use-different-git-ssh-key-per-project.html</id><summary type="html">&lt;p&gt;If you happen to be using different git accounts with they're own SSH keys;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;From my observation, it seems the input is coming from a file and its being streamed to &lt;code&gt;STDIN&lt;/code&gt; one line at a time.&lt;/p&gt;</summary><category term="python"></category></entry><entry><title>use different git ssh key per project</title><link href="https://mattlebrun.com/use-different-git-ssh-key-per-project.html" rel="alternate"></link><published>2016-09-14T16:47:00+08:00</published><updated>2016-09-14T16:47:00+08:00</updated><author><name>Matt Lebrun</name></author><id>tag:mattlebrun.com,2016-09-14:use-different-git-ssh-key-per-project.html</id><summary type="html">&lt;p&gt;If you happen to be using different git accounts with they're own SSH keys;
 i.e. you use different keys for deployment, personal, company A, company B, etc.&lt;/p&gt;
 &lt;p&gt;Then you probably have wondered how to tell git which key to use to manage the
 repo.&lt;/p&gt;
