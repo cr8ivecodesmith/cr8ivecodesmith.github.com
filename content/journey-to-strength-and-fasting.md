@@ -1,7 +1,7 @@
 Title: journey to strength and fasting
 Date: 2016-11-09 12:13
 Category: health
-Tags: fasting
+Tags: fasting, calisthenics
 Status: draft
 
 ## How I started
