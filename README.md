@@ -1,6 +1,12 @@
 [~cr8ivecodesmith]
 ==================
 
-My empty space in the internets.
+> There are only 2 important things in life:
+>
+> - Code
+> - Coffee
+> - Peanut butter
+>
+> ~ A programmer
 
 [~cr8ivecodesmith]: http://mattlebrun.com  
