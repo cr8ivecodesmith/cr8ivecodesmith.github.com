@@ -15,25 +15,25 @@
 
     <link rel="icon" type="image/ico" href="favicon.ico">
 
-    <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
 
+        <!-- Lead header -->
         <div class="row">
-            <div class="col-lg-3 col-md-12 col-sm-12 ">
-                <img class="rounded mx-auto d-block" style="width: 12rem;" src="images/profile.jpg" alt="Matt Lebrun">
+            <div class="col-lg-4 col-md-12 col-sm-12 ">
+                <img class="rounded mx-auto d-block profile-pic"
+                     src="images/profile.jpg" alt="Matt Lebrun">
             </div>
-            <div class="col-lg-9 col-md-12 col-sm-12">
-                <div class="intro">
-                    <h1>Matt Lebrun</h1>
+            <div class="col-lg-8 col-md-12 col-sm-12">
+                <div class="intro title">
+                    <h1>Hi! I'm Matt Lebrun</h1>
                     <p class="lead">
-                    I build software and teach about Python.
+                    I mostly write code in Python and JavaScript.
+                    I'm also an advocate of the Python Philippines community.
+                    Most importantly, I love to learn and teach about Python programming.
                     </p>
                 </div>
             </div>
@@ -45,68 +45,89 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <h2>Where I currently work</h2>
+        <!-- About -->
+        <div class="row section">
+            <div class="col-lg-4 col-md-12 col-sm-12 section">
+                <h3 class="title">Work</h3>
+                <small class="description">
+                    The companies I'm connected with.
+                </small>
                 <ul>
-                    <li>Wealth Access, ltd. (Python Developer)</li>
-                    <li><a href="https://codehappy.ph">Code Happy</a> (Co-founder)</li>
+                    <li>
+                        <a href="http://wealthaccessltd.com/">Wealth Access, ltd.</a>
+                        <small>(Current: Python Developer)</small>
+                    </li>
+                    <li>
+                        <a href="https://codehappy.ph">CodeHappy</a>
+                        <small>(Co-founder)</small>
+                    </li>
+                    <li>
+                        <a href="https://apps.shopify.com/edge-price-intelligence">Save22 / EdgePI</a>
+                        <small>(Python Ring Leader)</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 section">
+                <h3 class="title">Community</h3>
+                <small class="description">
+                    The tech community I helped built in the hopes of making a positive
+                    change in our country's IT industry.
+                </small>
+                <ul>
+                    <li>
+                        <a href="https://python.ph">PythonPH</a>
+                        <small>(Co-founder / Trustee)</small>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 section">
+                <h3 class="title">Projects</h3>
+                <small class="description">
+                    I like building tools to make my life easier as a developer.
+                    Here's a few worth sharing.
+                </small>
+                <ul>
+                    <li><a href="https://github.com/cr8ivecodesmith/djdraft">DjDraft</a></li>
+                    <li><a href="https://github.com/cr8ivecodesmith/the_data_kit">TheDataKit</a></li>
+                    <li><a href="https://github.com/cr8ivecodesmith/server_build">ServerBuild</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <h2>My advocacy</h2>
-                <ul>
-                    <li><a href="https://python.ph">PythonPH</a> (Co-founder / Trustee)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <h2>Various projects I've done</h2>
-                <ul>
-                    <li><a href="https://github.com/cr8ivecodesmith">Github</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
+        <!-- Training -->
+        <div class="row section">
+            <div class="col-12">
                 <h2>Need a Python trainer?</h2>
-                <p>I usually teach the ff. topics</p>
+                <p>
+                I usually teach the ff. topics
+                </p>
                 <ul>
                     <li>Basic Programming with Python</li>
                     <li>Django - Web app framework</li>
                     <li>Scrapy - Web scraping framework</li>
                 </ul>
                 <p>
-                I've built various applications in Python from simple scripts to data processing
-                pipelines utilizing different technologies.
+                I've built various applications in Python from
+                simple scripts,
+                web applications,
+                to whole data processing pipelines
+                utilizing different technologies.
                 </p>
                 <p>
                 So if you need to use Python for a specific purpose or you have other topics
                 in mind? Let me know.
                 </p>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <p>
                     Let's get in touch: <a href="mailto:matt@lebrun.org">matt@lebrun.org</a>
                 </p>
             </div>
         </div>
+
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
-        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

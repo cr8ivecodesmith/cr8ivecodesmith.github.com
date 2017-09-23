@@ -3,8 +3,24 @@ body {
     padding-bottom: 2rem;
 }
 
+.profile-pic {
+    width: 12rem;
+}
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title {
+    text-align: center!important;
+}
+
+.description {
+    font-weight: 300;
+}
+
 .intro {
     padding-top: 5rem;
     padding-bottom: 3rem;
-    text-align: center;
 }
