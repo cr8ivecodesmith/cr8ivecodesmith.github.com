@@ -20,6 +20,10 @@ body {
     font-weight: 300;
 }
 
+.list-detail {
+    padding-top: 0.5rem;
+}
+
 .intro {
     padding-top: 5rem;
     padding-bottom: 3rem;
