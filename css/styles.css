@@ -3,6 +3,10 @@ body {
     padding-bottom: 2rem;
 }
 
+.main-container {
+    max-width: 65%;
+}
+
 .profile-pic {
     width: 18rem;
 }
