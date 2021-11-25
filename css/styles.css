@@ -16,6 +16,10 @@ body {
     padding-bottom: 1rem;
 }
 
+.section-bot-sm {
+    padding-bottom: 1rem;
+}
+
 .title {
     text-align: center!important;
 }
