@@ -4,7 +4,16 @@ body {
 }
 
 .main-container {
-    max-width: 65%;
+  width: 100%;
+  max-width: 65%;   /* applies only on big screens */
+  margin: 0 auto;   /* keep centered */
+  padding: 0 1rem;  /* breathing room on mobile */
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    max-width: 100%; /* let it take full width */
+  }
 }
 
 .profile-pic {
