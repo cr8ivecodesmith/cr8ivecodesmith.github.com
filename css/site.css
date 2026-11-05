@@ -1,0 +1,91 @@
+/* Matt Lebrun — personal homepage. System fonts, no dependencies. */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:2rem}
+body{margin:0}
+a{color:inherit;text-underline-offset:.2em}
+a:focus-visible{outline:3px solid currentColor;outline-offset:5px}
+.skip{position:absolute;left:1rem;top:-7rem;padding:9px 12px;background:#fff;color:#111;z-index:10}
+.skip:focus{top:1rem}
+h1,h2,h3,p{margin-top:0}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+:root{--bg:#fff;--fg:#121212;--muted:#535353;--rule:#171717;--blue:#2348e8;--pale:#eff1f9}
+body{color:var(--fg);background:var(--bg);font:16px/1.56 system-ui,-apple-system,Segoe UI,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrapper{width:min(1400px,calc(100% - 96px));margin:auto}
+header{display:grid;grid-template-columns:1fr auto;align-items:center;padding:21px 0;border-bottom:2px solid var(--fg);gap:20px}
+.brand{font-weight:800;font-size:1.03rem;text-decoration:none;letter-spacing:-.055em}
+.brand span{color:var(--blue)}
+nav{display:flex;flex-wrap:wrap;gap:24px;text-transform:uppercase;font-size:.76rem;font-weight:700;letter-spacing:.025em}
+nav a{text-decoration:none}
+nav a:hover{color:var(--blue)}
+.hero{border-bottom:0;padding:86px 0 80px;display:grid;grid-template-columns:minmax(0,1.3fr) 270px;gap:55px;align-items:end}
+.super{font-size:.76rem;font-weight:750;letter-spacing:.17em;text-transform:uppercase;margin-bottom:34px}
+.super b{color:var(--blue)}
+h1{font-size:clamp(4.4rem,9.1vw,9.5rem);line-height:.9;letter-spacing:-.09em;font-weight:790;margin:0 0 42px}
+h1 .dot{color:var(--blue)}
+.intro{font-size:clamp(1.1rem,1.65vw,1.41rem);max-width:800px;line-height:1.56;font-weight:450;letter-spacing:-.02em}
+.actionrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.action{display:inline-block;text-decoration:none;background:var(--fg);color:#fff;padding:13px 20px;font-weight:700;font-size:.83rem}
+.action:hover{background:var(--blue)}
+.action.secondary{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
+.action.secondary:hover{border-color:var(--blue);color:var(--blue)}
+.side{border-top:5px solid var(--blue);padding-top:20px}
+.side .label{font-weight:780;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em}
+.side .large{font-weight:750;font-size:1.78rem;line-height:1.17;letter-spacing:-.065em;margin:27px 0 29px}
+.side .small{font-size:.84rem;color:var(--muted);line-height:1.5}
+section{padding:82px 0 92px;border-bottom:2px solid var(--fg)}
+.sec-head{display:grid;grid-template-columns:105px minmax(0,1fr);gap:30px;margin-bottom:55px}
+.no{font-weight:800;color:var(--blue);font-size:.93rem;letter-spacing:-.05em;padding-top:12px}
+h2{font-size:clamp(3rem,5.8vw,6.2rem);letter-spacing:-.08em;line-height:1;font-weight:800;margin:0;max-width:800px}
+.descr{font-size:1.08rem;color:var(--muted);max-width:700px;margin-top:23px}
+.work-rows{margin-left:135px;border-top:1px solid #a4a4a4}
+.work-row{display:grid;grid-template-columns:36% minmax(0,1fr);gap:30px;border-bottom:1px solid #a4a4a4;padding:29px 0;align-items:start}
+.work-row h3{font-size:1.43rem;line-height:1.16;letter-spacing:-.04em;margin:0;font-weight:760}
+.work-row p{margin:0 0 10px;color:var(--muted);max-width:480px}
+.interests{display:grid;grid-template-columns:1fr .9fr;gap:100px}
+.interests h2{max-width:660px}
+.interests .copy{font-size:1.16rem;line-height:1.65;max-width:530px;padding-top:18px}
+.interests .copy p:nth-child(2){color:var(--muted)}
+.hashes{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.hashes span{border:1px solid #aaa;padding:6px 10px;font-weight:650;font-size:.8rem}
+.hashes span:first-child{background:var(--blue);color:#fff;border-color:var(--blue)}
+.cv-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px;align-items:end}
+.cv-grid p{font-size:1.17rem;line-height:1.55;max-width:620px}
+.inline{font-size:.86rem;font-weight:800;text-decoration:none;border-bottom:2px solid var(--blue);padding-bottom:4px}
+footer{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;padding:29px 0 60px;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.035em}
+footer .links{display:flex;gap:25px}
+footer a{text-decoration:none}
+@media(max-width:900px){.wrapper{width:calc(100% - 50px)}.hero{grid-template-columns:1fr 200px;gap:25px}.work-rows{margin-left:0}.interests{gap:35px}.cv-grid{gap:35px}}
+@media(max-width:650px){.wrapper{width:calc(100% - 32px)}header{align-items:start}nav{gap:12px;font-size:.68rem}.hero{grid-template-columns:1fr;padding:65px 0 60px;gap:55px}h1{font-size:clamp(4.2rem,17vw,7rem);margin-bottom:35px}.side{max-width:350px}.side .large{margin:15px 0}section{padding:65px 0 70px}.sec-head{grid-template-columns:1fr;gap:15px;margin-bottom:30px}.no{padding:0}.work-row{grid-template-columns:1fr;gap:12px}.work-row h3{grid-column:auto}.work-row>div:nth-child(2){grid-column:auto}.interests,.cv-grid{grid-template-columns:1fr;gap:20px}.interests .copy{padding:0}footer{padding-bottom:36px}}
+
+/* Iconography is limited to recognition (mail/social) and outbound links. */
+.icon-sprite{position:absolute;width:0;height:0;overflow:hidden}
+.icon{display:block;width:1.35rem;height:1.35rem;flex:none}
+.icon.small{width:1rem;height:1rem}
+.icon.tiny{display:inline-block;width:.9rem;height:.9rem;vertical-align:-.12em;margin-left:.15rem}
+.nav-contact{width:35px;height:35px;margin:-8px 0;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--fg);border-radius:50%;transition:background-color .15s,color .15s}
+.nav-contact:hover{background:var(--fg);color:var(--bg)}
+nav{align-items:center}
+footer .links{align-items:center;flex-wrap:wrap}
+footer .links a{display:inline-flex;align-items:center;gap:7px}
+footer a:hover{color:var(--blue)}
+@media(max-width:650px){header{align-items:center}nav{gap:14px}.brand{font-size:.95rem}.nav-contact{width:34px;height:34px;margin:-8px 0}footer{gap:15px}}
+@media(max-width:350px){.brand{font-size:.83rem}nav{gap:9px;font-size:.64rem}.wrapper{width:calc(100% - 28px)}}
+@media(prefers-reduced-motion:reduce){.nav-contact{transition:none}}
+footer .signoff{text-transform:none;letter-spacing:0;font-weight:600}
+
+/* Organization links use one consistent treatment across all Work rows. */
+.work-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px 24px;margin-top:2px}
+.work-links a{display:inline-flex;align-items:center;justify-content:flex-start;gap:5px;padding:0;color:var(--blue);font-size:.76rem;line-height:1.5;font-weight:800;letter-spacing:.045em;text-transform:uppercase;text-decoration:none}
+.work-links a:hover{text-decoration:underline;text-underline-offset:.22em}
+.work-links svg{width:.95rem;height:.95rem;flex:none}
+
+/* Three fields of practice: retained as an editorial band above the Work section. */
+.practice-band{background:var(--fg);color:#fff}
+.practice-band-inner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.practice-band span{display:block;text-align:center;padding:19px 0;font-size:.77rem;font-weight:800;letter-spacing:.035em;text-transform:uppercase;line-height:1.35}
+@media(max-width:650px){
+  .practice-band-inner{gap:0;grid-template-columns:1fr}
+  .practice-band span{padding:11px 0;font-size:.72rem}
+  .practice-band span+span{border-top:1px solid #454545}
+}
