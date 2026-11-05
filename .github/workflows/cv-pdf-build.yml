@@ -1,0 +1,61 @@
+name: Generate CV PDF for pull request
+
+on:
+  push:
+    branches: [cv/downloadable-pdf-2026]
+    paths:
+      - cv/index.html
+      - css/cv.css
+      - css/site.css
+      - scripts/generate_cv_pdf.py
+      - scripts/requirements-cv.txt
+      - .github/workflows/cv-pdf-build.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install renderer and verifier
+        run: python -m pip install -r scripts/requirements-cv.txt pypdf
+      - name: Render current website CV
+        run: python scripts/generate_cv_pdf.py
+      - name: Validate PDF structure, text, and links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          pdf = Path("cv/matt-lebrun-cv.pdf")
+          reader = PdfReader(str(pdf))
+          text = "\n".join(page.extract_text() or "" for page in reader.pages)
+          for expected in ("DSWD Python Web Fundamentals", "PythonPH", "PyCon APAC 2019", "Matt Lebrun"):
+              assert expected in text, f"Missing in generated PDF: {expected}"
+          for page in reader.pages:
+              assert abs(float(page.mediabox.width) - 595.28) < 2, "Not A4 width"
+              assert abs(float(page.mediabox.height) - 841.89) < 2, "Not A4 height"
+          links = [
+              a.get_object().get("/A", {}).get("/URI", "")
+              for page in reader.pages
+              for a in (page.get("/Annots") or [])
+              if a.get_object().get("/A")
+          ]
+          assert any("mattlebrun.com/cv/" in str(link) for link in links), "Missing website link"
+          assert any("linkedin.com/in/mattlebrun/" in str(link) for link in links), "Missing LinkedIn link"
+          assert any(str(link).startswith("mailto:matt@lebrun.org") for link in links), "Missing email link"
+          print(f"Validated {len(reader.pages)} A4 pages, {len(links)} links, {pdf.stat().st_size} bytes")
+          PY
+      - name: Commit generated PDF to proposal branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cv/matt-lebrun-cv.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate downloadable CV PDF from website"
+            git push
+          fi
