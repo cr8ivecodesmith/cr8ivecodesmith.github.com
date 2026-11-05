@@ -34,8 +34,10 @@ jobs:
           pdf = Path("cv/matt-lebrun-cv.pdf")
           reader = PdfReader(str(pdf))
           text = "\n".join(page.extract_text() or "" for page in reader.pages)
+          # PDF text extraction may omit spaces between adjacent text runs.
+          compact = "".join(text.split()).casefold()
           for expected in ("DSWD Python Web Fundamentals", "PythonPH", "PyCon APAC 2019", "Matt Lebrun"):
-              assert expected in text, f"Missing in generated PDF: {expected}"
+              assert "".join(expected.split()).casefold() in compact, f"Missing in generated PDF: {expected}"
           for page in reader.pages:
               assert abs(float(page.mediabox.width) - 595.28) < 2, "Not A4 width"
               assert abs(float(page.mediabox.height) - 841.89) < 2, "Not A4 height"
