@@ -1,0 +1,22 @@
+/* Shared presentation for the specialized CVs and their generated PDFs. */
+@page { size: A4; margin: 13mm 15mm; }
+body { font-size: 10pt; line-height: 1.35; }
+.specialized-cv { max-width: 190mm; margin: 0 auto; padding: 15mm; }
+.specialized-cv .document-header { display: block; padding: 0 0 10pt; margin: 0 0 13pt; border-bottom: 2pt solid #121212; }
+.specialized-cv h1 { font-size: 27pt; line-height: 1.1; letter-spacing: -.055em; margin: 0 0 4pt; }
+.document-subtitle { color: #2348e8; font-size: 11pt; font-weight: 700; margin: 0 0 5pt; }
+.document-contact { color: #535353; font-size: 8.5pt; margin: 0; }
+.specialized-cv h2 { font-size: 14pt; line-height: 1.15; letter-spacing: -.025em; margin: 11pt 0 5pt; padding-bottom: 3pt; border-bottom: .6pt solid #aaa; break-after: avoid; }
+.specialized-cv h3 { font-size: 11pt; line-height: 1.25; margin: 7pt 0 3pt; break-after: avoid; }
+.specialized-cv p { margin: 0 0 4pt; }
+.specialized-cv ul { margin: 3pt 0 5pt; padding-left: 17pt; }
+.specialized-cv li { margin-bottom: 2pt; }
+.specialized-cv li, .specialized-cv p { orphans: 3; widows: 3; }
+@media print {
+  .specialized-cv { max-width: none; padding: 0; }
+  .specialized-cv a { color: inherit; text-decoration: none; }
+}
+@media screen and (max-width: 600px) {
+  .specialized-cv { padding: 24px; }
+  .specialized-cv h1 { font-size: 25pt; }
+}
